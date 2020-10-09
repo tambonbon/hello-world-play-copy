@@ -19,7 +19,7 @@ object TrafficLight {
     // c.getClass.getDeclaredFields.map(_.getName)
     // list.getClass.getDeclaredField.map(_.getName)
     
-    def save(tl: TrafficLight) = { list = list ++ Set(tl) }
+    def save(tl: TrafficLight) = { list = list ++ List(tl) }
 //     val transformer = (__ \ "id").json.update(
 //          __.read[TrafficLight].map(_ => Json.toJson("updated value"))
 // )
