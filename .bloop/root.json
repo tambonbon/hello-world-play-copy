@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "/Users/tammy/OneDrive - Ordina/hello-world-play",
-        "workspaceDir": "/Users/tammy/OneDrive - Ordina/hello-world-play",
+        "directory": "/Users/tammy/OneDrive - Ordina/hello-world-play-copy",
+        "workspaceDir": "/Users/tammy/OneDrive - Ordina/hello-world-play-copy",
         "sources": [
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/app-2.13",
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/app",
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/app",
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/target/scala-2.13/src_managed/main",
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/target/scala-2.13/twirl/main",
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/target/scala-2.13/routes/main"
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/app-2.13",
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/app",
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/app",
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/scala-2.13/src_managed/main",
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/scala-2.13/twirl/main",
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/scala-2.13/routes/main"
         ],
         "dependencies": [
             
@@ -76,11 +76,11 @@
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.10.3/jackson-module-paranamer-2.10.3.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
         ],
-        "out": "/Users/tammy/OneDrive - Ordina/hello-world-play/.bloop/root",
-        "classesDir": "/Users/tammy/OneDrive - Ordina/hello-world-play/.bloop/root/scala-2.13/classes",
+        "out": "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop/root",
+        "classesDir": "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop/root/scala-2.13/classes",
         "resources": [
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/conf",
-            "/Users/tammy/OneDrive - Ordina/hello-world-play/target/scala-2.13/resource_managed/main"
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/conf",
+            "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/scala-2.13/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -99,7 +99,7 @@
                 "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar",
                 "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
             ],
-            "analysis": "/Users/tammy/OneDrive - Ordina/hello-world-play/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
+            "analysis": "/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -160,7 +160,7 @@
             "config": {
                 "home": "/Users/tammy/.jabba/jdk/adopt@1.11.0-7/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/tammy/OneDrive - Ordina/hello-world-play"
+                    "-Duser.dir=/Users/tammy/OneDrive - Ordina/hello-world-play-copy"
                 ]
             },
             "mainClass": [
