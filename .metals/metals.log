@@ -1,0 +1,716 @@
+2020.10.07 16:00:34 INFO  started: Metals version 0.9.4 in workspace '/Users/tammy/OneDrive - Ordina/hello-world-play' for client vscode.
+2020.10.07 16:00:35 INFO  time: initialize in 1.05s
+2020.10.07 16:00:43 INFO  skipping build import with status 'Requested'
+2020.10.07 16:05:56 INFO  no build target: using presentation compiler with only scala-library
+2020.10.07 16:05:56 WARN  no build target for: /Users/tammy/OneDrive - Ordina/hello-world-play/app/controllers/HomeController.scala
+2020.10.07 16:12:37 INFO  running '/Users/tammy/.jabba/jdk/adopt@1.11.0-7/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/metals11459042922114507286/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.07 16:12:38 INFO  skipping build import with status 'Started'
+2020.10.07 16:12:39 INFO  skipping build import with status 'Started'
+2020.10.07 16:12:40 INFO  [info] welcome to sbt 1.3.13 (AdoptOpenJDK Java 11.0.7)
+2020.10.07 16:12:42 INFO  [info] loading settings for project hello-world-play-build-build-build from metals.sbt ...
+2020.10.07 16:12:42 INFO  [info] loading project definition from /Users/tammy/OneDrive - Ordina/hello-world-play/project/project/project
+2020.10.07 16:12:44 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.07 16:12:44 INFO  [info] loading settings for project hello-world-play-build-build from metals.sbt ...
+2020.10.07 16:12:46 INFO  [info] loading project definition from /Users/tammy/OneDrive - Ordina/hello-world-play/project/project
+2020.10.07 16:12:46 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.07 16:12:47 INFO  [success] Generated .bloop/hello-world-play-build-build.json
+2020.10.07 16:12:47 INFO  [success] Total time: 1 s, completed 7 Oct 2020, 16:12:47
+2020.10.07 16:12:47 INFO  [info] loading settings for project hello-world-play-build from plugins.sbt,metals.sbt ...
+2020.10.07 16:12:47 INFO  [info] loading project definition from /Users/tammy/OneDrive - Ordina/hello-world-play/project
+2020.10.07 16:12:59 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.07 16:12:59 INFO  [success] Generated .bloop/hello-world-play-build.json
+2020.10.07 16:12:59 INFO  [success] Total time: 11 s, completed 7 Oct 2020, 16:12:59
+2020.10.07 16:13:01 INFO  [info] loading settings for project root from build.sbt ...
+2020.10.07 16:13:01 INFO  [info] set current project to hello-world-play (in build file:/Users/tammy/OneDrive%20-%20Ordina/hello-world-play/)
+2020.10.07 16:13:19 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.07 16:13:29 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.07 16:13:29 INFO  [success] Generated .bloop/root.json
+2020.10.07 16:13:29 INFO  [success] Generated .bloop/root-test.json
+2020.10.07 16:13:29 INFO  [success] Total time: 27 s, completed 7 Oct 2020, 16:13:29
+2020.10.07 16:13:29 INFO  build tool exit: 0
+2020.10.07 16:13:29 INFO  time: ran 'sbt bloopInstall' in 51s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14339853689555221882/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/Users/tammy/OneDrive - Ordina/hello-world-play/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/tammy/OneDrive - Ordina/hello-world-play/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/Users/tammy/OneDrive - Ordina/hello-world-play/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root'
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14339853689555221882/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14339853689555221882/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.07 16:13:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher16059501155921619754/bsp.socket'...
+Starting the bsp launcher for bloop...
+Waiting for the bsp connection to come up...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher10703192701079740691/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher16059501155921619754/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher16059501155921619754/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher10703192701079740691/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher10703192701079740691/bsp.socket...
+2020.10.07 16:13:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.07 16:13:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.07 16:13:33 INFO  time: connected to build server in 4.57s
+2020.10.07 16:13:33 INFO  Connected to Build server v1.4.4-13-408f4d80
+Oct 07, 2020 4:13:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 231
+Oct 07, 2020 4:13:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 230
+2020.10.07 16:13:39 INFO  time: indexed workspace in 5.95s
+2020.10.07 16:13:40 INFO  compiling root (7 scala sources and 1 java source)
+2020.10.07 16:13:50 INFO  compiling root-test (1 scala source)
+2020.10.07 16:13:50 INFO  time: compiled root in 10s
+2020.10.07 16:13:50 INFO  time: compiled root-test in 0.74s
+2020.10.07 16:20:46 INFO  skipping build import with status 'Installed'
+2020.10.07 16:22:01 INFO  skipping build import with status 'Installed'
+Oct 07, 2020 4:39:14 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 07, 2020 4:39:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1889)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5882)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in play.api.libs.json.Writes[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 794, 794, 810)
+Oct 07, 2020 4:40:55 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 07, 2020 4:40:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader java.net.URLClassLoader @5d65baf1)
+java.lang.ClassCastException: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader java.net.URLClassLoader @5d65baf1)
+	at scala.reflect.internal.Symbols$Symbol.alternatives(Symbols.scala:1996)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall.alternatives(SignatureHelpProvider.scala:148)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2(SignatureHelpProvider.scala:276)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2$adapted(SignatureHelpProvider.scala:275)
+	at scala.Option$WithFilter.$anonfun$withFilter$1(Option.scala:362)
+	at scala.Option$WithFilter.$anonfun$withFilter$1$adapted(Option.scala:362)
+	at scala.Option$WithFilter.map(Option.scala:319)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:275)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+Oct 07, 2020 4:40:56 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 07, 2020 4:40:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader java.net.URLClassLoader @5d65baf1)
+java.lang.ClassCastException: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader java.net.URLClassLoader @5d65baf1)
+	at scala.reflect.internal.Symbols$Symbol.alternatives(Symbols.scala:1996)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall.alternatives(SignatureHelpProvider.scala:148)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2(SignatureHelpProvider.scala:276)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2$adapted(SignatureHelpProvider.scala:275)
+	at scala.Option$WithFilter.$anonfun$withFilter$1(Option.scala:362)
+	at scala.Option$WithFilter.$anonfun$withFilter$1$adapted(Option.scala:362)
+	at scala.Option$WithFilter.map(Option.scala:319)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:275)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+Oct 07, 2020 4:40:56 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 07, 2020 4:40:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader java.net.URLClassLoader @5d65baf1)
+java.lang.ClassCastException: class scala.reflect.internal.Types$PolyType cannot be cast to class scala.reflect.internal.Types$OverloadedType (scala.reflect.internal.Types$PolyType and scala.reflect.internal.Types$OverloadedType are in unnamed module of loader java.net.URLClassLoader @5d65baf1)
+	at scala.reflect.internal.Symbols$Symbol.alternatives(Symbols.scala:1996)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall.alternatives(SignatureHelpProvider.scala:148)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2(SignatureHelpProvider.scala:276)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$fromTree$2$adapted(SignatureHelpProvider.scala:275)
+	at scala.Option$WithFilter.$anonfun$withFilter$1(Option.scala:362)
+	at scala.Option$WithFilter.$anonfun$withFilter$1$adapted(Option.scala:362)
+	at scala.Option$WithFilter.map(Option.scala:319)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:275)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.10.07 16:41:10 INFO  compiling root (1 scala source)
+2020.10.07 16:41:10 INFO  time: compiled root in 0.18s
+Oct 07, 2020 4:41:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1358
+2020.10.07 16:41:33 INFO  compiling root (1 scala source)
+2020.10.07 16:41:33 INFO  time: compiled root in 0.2s
+2020.10.07 16:43:46 INFO  compiling root (1 scala source)
+2020.10.07 16:43:46 INFO  time: compiled root in 0.15s
+2020.10.07 16:43:51 INFO  compiling root (1 scala source)
+2020.10.07 16:43:51 INFO  time: compiled root in 0.15s
+2020.10.07 16:43:51 INFO  compiling root (1 scala source)
+2020.10.07 16:43:51 INFO  time: compiled root in 0.12s
+2020.10.07 16:43:51 INFO  compiling root (1 scala source)
+2020.10.07 16:43:52 INFO  time: compiled root in 0.11s
+2020.10.07 16:43:52 INFO  compiling root (1 scala source)
+2020.10.07 16:43:52 INFO  time: compiled root in 0.1s
+2020.10.07 16:43:52 INFO  compiling root (1 scala source)
+2020.10.07 16:43:52 INFO  time: compiled root in 0.1s
+2020.10.07 16:43:52 INFO  compiling root (1 scala source)
+2020.10.07 16:43:52 INFO  time: compiled root in 96ms
+2020.10.07 16:44:06 INFO  compiling root (1 scala source)
+2020.10.07 16:44:06 INFO  time: compiled root in 0.13s
+2020.10.07 16:44:43 INFO  compiling root (1 scala source)
+2020.10.07 16:44:43 INFO  time: compiled root in 0.14s
+2020.10.07 16:44:44 INFO  compiling root (1 scala source)
+2020.10.07 16:44:44 INFO  time: compiled root in 0.14s
+2020.10.07 16:44:45 INFO  compiling root (1 scala source)
+2020.10.07 16:44:45 INFO  time: compiled root in 0.13s
+2020.10.07 16:46:30 INFO  compiling root (1 scala source)
+2020.10.07 16:46:30 INFO  time: compiled root in 0.13s
+2020.10.07 16:46:39 INFO  compiling root (1 scala source)
+2020.10.07 16:46:39 INFO  time: compiled root in 0.14s
+2020.10.07 16:46:43 INFO  compiling root (1 scala source)
+2020.10.07 16:46:43 INFO  time: compiled root in 0.13s
+2020.10.07 16:47:03 INFO  compiling root (1 scala source)
+2020.10.07 16:47:03 INFO  time: compiled root in 0.13s
+2020.10.07 16:47:04 INFO  compiling root (1 scala source)
+2020.10.07 16:47:04 INFO  time: compiled root in 0.1s
+2020.10.07 16:47:53 INFO  compiling root (1 scala source)
+2020.10.07 16:47:53 INFO  time: compiled root in 0.13s
+2020.10.07 16:48:01 INFO  compiling root (1 scala source)
+2020.10.07 16:48:01 INFO  time: compiled root in 0.13s
+2020.10.07 16:49:07 INFO  compiling root (1 scala source)
+2020.10.07 16:49:07 INFO  time: compiled root in 0.66s
+2020.10.07 16:49:49 INFO  compiling root (1 scala source)
+2020.10.07 16:49:49 INFO  time: compiled root in 0.78s
+2020.10.07 16:49:52 INFO  compiling root (1 scala source)
+2020.10.07 16:49:52 INFO  time: compiled root in 0.69s
+2020.10.07 16:50:02 INFO  compiling root (1 scala source)
+2020.10.07 16:50:02 INFO  time: compiled root in 0.66s
+2020.10.07 16:50:06 INFO  compiling root (1 scala source)
+2020.10.07 16:50:06 INFO  time: compiled root in 0.62s
+2020.10.07 16:50:10 INFO  compiling root (1 scala source)
+2020.10.07 16:50:10 INFO  time: compiled root in 72ms
+2020.10.07 16:50:13 INFO  compiling root (1 scala source)
+2020.10.07 16:50:13 INFO  time: compiled root in 0.64s
+2020.10.07 16:51:30 INFO  compiling root (1 scala source)
+2020.10.07 16:51:30 INFO  time: compiled root in 58ms
+2020.10.07 16:51:37 INFO  compiling root (1 scala source)
+2020.10.07 16:51:37 INFO  time: compiled root in 0.5s
+2020.10.07 16:51:41 INFO  compiling root (1 scala source)
+2020.10.07 16:51:41 INFO  time: compiled root in 55ms
+2020.10.07 16:52:03 INFO  compiling root (1 scala source)
+2020.10.07 16:52:03 INFO  time: compiled root in 0.96s
+2020.10.07 16:52:03 INFO  compiling root (1 scala source)
+2020.10.07 16:52:04 INFO  time: compiled root in 0.14s
+2020.10.07 16:52:14 INFO  compiling root (1 scala source)
+2020.10.07 16:52:14 INFO  time: compiled root in 0.88s
+2020.10.07 16:52:14 INFO  compiling root (1 scala source)
+2020.10.07 16:52:16 INFO  time: compiled root in 0.15s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in play.api.libs.json.Writes[HomeController.this.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 838, 838, 858)
+2020.10.07 16:58:45 INFO  compiling root (1 scala source)
+2020.10.07 16:58:45 INFO  time: compiled root in 0.68s
+2020.10.07 16:58:45 INFO  compiling root (1 scala source)
+2020.10.07 16:58:46 INFO  time: compiled root in 0.36s
+2020.10.07 17:05:02 INFO  compiling root (1 scala source)
+2020.10.07 17:05:02 INFO  time: compiled root in 61ms
+2020.10.07 17:05:07 INFO  compiling root (1 scala source)
+2020.10.07 17:05:07 INFO  time: compiled root in 0.81s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in play.api.libs.json.Writes[HomeController.this.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 935, 935, 955)
+2020.10.07 17:09:30 INFO  compiling root (1 scala source)
+2020.10.07 17:09:30 INFO  time: compiled root in 0.58s
+2020.10.07 17:10:02 INFO  compiling root (1 scala source)
+2020.10.07 17:10:02 INFO  time: compiled root in 0.67s
+2020.10.07 17:10:04 INFO  compiling root (1 scala source)
+2020.10.07 17:10:04 INFO  time: compiled root in 0.68s
+2020.10.07 17:10:04 INFO  compiling root (1 scala source)
+2020.10.07 17:10:05 INFO  time: compiled root in 0.47s
+Oct 07, 2020 5:11:13 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 07, 2020 5:11:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 252, 252, 268)
+2020.10.07 17:12:49 INFO  compiling root (1 scala source)
+2020.10.07 17:12:49 INFO  time: compiled root in 0.5s
+2020.10.07 17:28:58 INFO  compiling root (1 scala source)
+2020.10.07 17:28:58 INFO  time: compiled root in 0.8s
+2020.10.07 17:36:52 INFO  compiling root (1 scala source)
+2020.10.07 17:36:52 INFO  time: compiled root in 58ms
+2020.10.07 17:37:06 INFO  compiling root (1 scala source)
+2020.10.07 17:37:06 INFO  time: compiled root in 59ms
+2020.10.07 17:37:10 INFO  compiling root (1 scala source)
+2020.10.07 17:37:10 INFO  time: compiled root in 0.11s
+2020.10.07 17:38:36 INFO  compiling root (1 scala source)
+2020.10.07 17:38:36 INFO  time: compiled root in 0.11s
+2020.10.07 17:38:46 INFO  compiling root (1 scala source)
+2020.10.07 17:38:46 INFO  time: compiled root in 56ms
+2020.10.07 17:38:52 INFO  compiling root (1 scala source)
+2020.10.07 17:38:52 INFO  time: compiled root in 91ms
+2020.10.07 17:38:54 INFO  compiling root (1 scala source)
+2020.10.07 17:38:54 INFO  time: compiled root in 91ms
+2020.10.07 17:40:47 INFO  compiling root (1 scala source)
+2020.10.07 17:40:47 INFO  time: compiled root in 94ms
+2020.10.07 17:42:34 INFO  compiling root (1 scala source)
+2020.10.07 17:42:34 INFO  time: compiled root in 0.12s
+2020.10.07 17:42:48 INFO  compiling root (1 scala source)
+2020.10.07 17:42:48 INFO  time: compiled root in 0.12s
+2020.10.07 17:42:50 INFO  compiling root (1 scala source)
+2020.10.07 17:42:50 INFO  time: compiled root in 0.11s
+2020.10.07 17:42:52 INFO  compiling root (1 scala source)
+2020.10.07 17:42:52 INFO  time: compiled root in 0.11s
+2020.10.07 17:43:17 INFO  compiling root (1 scala source)
+2020.10.07 17:43:17 INFO  time: compiled root in 99ms
+2020.10.07 17:43:17 INFO  compiling root (1 scala source)
+2020.10.07 17:43:18 INFO  time: compiled root in 70ms
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Double]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 897, 897, 910)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Double]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 897, 897, 910)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Double]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 897, 897, 911)
+2020.10.07 17:45:49 INFO  compiling root (1 scala source)
+2020.10.07 17:45:49 INFO  time: compiled root in 94ms
+Oct 07, 2020 5:46:03 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 1005, count -1, length 1076
+2020.10.07 17:46:07 INFO  compiling root (1 scala source)
+2020.10.07 17:46:07 INFO  time: compiled root in 94ms
+2020.10.07 17:46:08 INFO  compiling root (1 scala source)
+2020.10.07 17:46:08 INFO  time: compiled root in 90ms
+2020.10.07 17:46:10 INFO  compiling root (1 scala source)
+2020.10.07 17:46:10 INFO  time: compiled root in 0.1s
+2020.10.07 17:46:30 INFO  compiling root (1 scala source)
+2020.10.07 17:46:30 INFO  time: compiled root in 0.63s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Double]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 897, 897, 911)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Double]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 897, 897, 911)
+2020.10.07 18:15:57 INFO  compiling root (1 scala source)
+2020.10.07 18:15:57 INFO  time: compiled root in 0.68s
+2020.10.07 18:16:33 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 18:16:35 INFO  time: compiled root in 2.13s
+2020.10.07 18:18:09 INFO  compiling root (1 scala source)
+2020.10.07 18:18:09 INFO  time: compiled root in 0.72s
+2020.10.07 18:18:41 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 18:18:42 INFO  time: compiled root in 1.32s
+2020.10.07 18:43:48 INFO  compiling root (1 scala source)
+2020.10.07 18:43:48 INFO  time: compiled root in 0.11s
+2020.10.07 18:44:45 INFO  compiling root (1 scala source)
+2020.10.07 18:44:45 INFO  time: compiled root in 0.84s
+2020.10.07 21:44:48 INFO  compiling root (1 scala source)
+2020.10.07 21:44:48 INFO  time: compiled root in 0.8s
+2020.10.07 21:44:48 INFO  compiling root (1 scala source)
+2020.10.07 21:44:48 INFO  time: compiled root in 0.15s
+2020.10.07 21:44:50 INFO  compiling root (1 scala source)
+2020.10.07 21:44:50 INFO  time: compiled root in 0.59s
+2020.10.07 21:44:50 INFO  compiling root (1 scala source)
+2020.10.07 21:44:50 INFO  time: compiled root in 0.14s
+2020.10.07 21:45:03 INFO  compiling root (1 scala source)
+2020.10.07 21:45:03 INFO  time: compiled root in 0.73s
+2020.10.07 21:45:03 INFO  compiling root (1 scala source)
+2020.10.07 21:45:03 INFO  time: compiled root in 0.12s
+2020.10.07 21:45:51 INFO  compiling root (1 scala source)
+2020.10.07 21:45:51 INFO  time: compiled root in 0.54s
+2020.10.07 21:45:51 INFO  compiling root (1 scala source)
+2020.10.07 21:45:51 INFO  time: compiled root in 0.11s
+2020.10.07 21:46:36 INFO  compiling root (1 scala source)
+2020.10.07 21:46:36 INFO  time: compiled root in 0.93s
+2020.10.07 21:46:36 INFO  compiling root (1 scala source)
+2020.10.07 21:46:37 INFO  time: compiled root in 0.13s
+2020.10.07 21:46:37 INFO  compiling root (1 scala source)
+2020.10.07 21:46:37 INFO  time: compiled root in 0.19s
+2020.10.07 21:46:37 INFO  compiling root (1 scala source)
+2020.10.07 21:46:37 INFO  time: compiled root in 0.13s
+2020.10.07 21:46:37 INFO  compiling root (1 scala source)
+2020.10.07 21:46:37 INFO  time: compiled root in 0.16s
+2020.10.07 21:46:37 INFO  compiling root (1 scala source)
+2020.10.07 21:46:37 INFO  time: compiled root in 0.11s
+2020.10.07 21:46:53 INFO  compiling root (1 scala source)
+2020.10.07 21:46:53 INFO  time: compiled root in 0.49s
+2020.10.07 21:46:53 INFO  compiling root (1 scala source)
+2020.10.07 21:46:53 INFO  time: compiled root in 0.12s
+2020.10.07 21:46:55 INFO  compiling root (1 scala source)
+2020.10.07 21:46:55 INFO  time: compiled root in 0.61s
+2020.10.07 21:46:55 INFO  compiling root (1 scala source)
+2020.10.07 21:46:55 INFO  time: compiled root in 0.11s
+2020.10.07 21:47:04 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 21:47:04 INFO  time: compiled root in 0.24s
+2020.10.07 21:47:04 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 21:47:04 INFO  time: compiled root in 0.2s
+2020.10.07 21:47:17 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 21:47:17 INFO  time: compiled root in 0.2s
+2020.10.07 21:47:37 INFO  compiling root (7 scala sources and 1 java source)
+2020.10.07 21:47:37 INFO  time: compiled root in 0.96s
+2020.10.07 21:47:53 INFO  compiling root (1 scala source)
+2020.10.07 21:47:53 INFO  time: compiled root in 87ms
+2020.10.07 21:48:18 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 21:48:18 INFO  time: compiled root in 0.21s
+2020.10.07 21:48:22 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 21:48:22 INFO  time: compiled root in 0.21s
+2020.10.07 21:48:38 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.07 21:48:39 INFO  time: compiled root in 1.35s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 904)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 898)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 897)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 904)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 897)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 898)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 899)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 899)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 899)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 904)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 897)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 898)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 899)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 508, 508, 528)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Seq[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 216, 216, 233)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 899)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 888, 888, 899)
+Oct 08, 2020 6:16:49 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+Oct 08, 2020 6:16:50 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+Oct 08, 2020 6:16:50 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+Oct 08, 2020 6:16:51 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+Oct 08, 2020 6:16:51 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+Oct 08, 2020 6:16:52 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+Oct 08, 2020 6:16:52 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+Oct 08, 2020 6:16:58 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 08, 2020 6:16:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 1026, 1026, 1042)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 1026, 1026, 1035)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 1026, 1026, 1037)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala in Option[Int]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/HomeController.scala, 1220, 1220, 1231)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 549, 549, 569)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 549, 549, 569)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 564, 564, 584)
+Oct 08, 2020 12:27:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14582
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 587, 587, 607)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 587, 587, 607)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 587, 587, 607)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in play.api.libs.json.Format[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 608, 608, 628)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in List[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 216, 216, 234)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in List[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 216, 216, 234)
+Oct 08, 2020 2:52:28 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 08, 2020 2:52:28 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 08, 2020 2:52:28 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in List[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 216, 216, 234)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[<error>,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 297)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 298)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 299)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 292)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 293)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 295)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Map[Int,String]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 281, 281, 297)
+2020.10.08 17:07:10 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 5.22s
+2020.10.08 17:07:13 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.34s
+2020.10.08 17:07:19 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.83s
+2020.10.08 17:07:27 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.82s
+2020.10.08 17:07:41 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.47s
+[31merror[39m: app/controllers/ws.worksheet.sc:11:5: missing argument list for method getDeclaredField in class Class
+Unapplied methods are only converted to functions when a function type is expected.
+You can make this conversion explicit by writing `getDeclaredField _` or `getDeclaredField(_)` instead of `getDeclaredField`.
+    list.getClass.getDeclaredField.map(_.getName).zip(list.productIterator.to).toMap
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[31merror[39m: app/controllers/ws.worksheet.sc:11:55: value productIterator is not a member of Set[App.this.TrafficLight]
+    list.getClass.getDeclaredField.map(_.getName).zip(list.productIterator.to).toMap
+                                                      ^^^^^^^^^^^^^^^^^^^^
+2020.10.08 17:08:43 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.21s
+[31merror[39m: app/controllers/ws.worksheet.sc:11:5: missing argument list for method getDeclaredField in class Class
+Unapplied methods are only converted to functions when a function type is expected.
+You can make this conversion explicit by writing `getDeclaredField _` or `getDeclaredField(_)` instead of `getDeclaredField`.
+    list.getClass.getDeclaredField.map(_.getName)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.08 17:09:51 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.21s
+[31merror[39m: app/controllers/ws.worksheet.sc:11:1: not enough arguments for method getDeclaredField: (x$1: String): java.lang.reflect.Field.
+Unspecified value parameter x$1.
+list.getClass.getDeclaredField()
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.08 17:10:12 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.18s
+[31merror[39m: app/controllers/ws.worksheet.sc:11:1: missing argument list for method getDeclaredField in class Class
+Unapplied methods are only converted to functions when a function type is expected.
+You can make this conversion explicit by writing `getDeclaredField _` or `getDeclaredField(_)` instead of `getDeclaredField`.
+list.getClass.getDeclaredField
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.08 17:10:14 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.15s
+2020.10.08 17:11:23 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.19s
+2020.10.08 17:12:06 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.17s
+2020.10.08 17:12:20 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.42s
+2020.10.08 17:13:12 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.45s
+2020.10.08 17:14:34 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.4s
+2020.10.08 17:15:21 ERROR code navigation does not work for the file '/Users/tammy/OneDrive - Ordina/hello-world-play/app/controllers/ws.worksheet.sc' because the build target root is being compiled. Wait until compilation is finished and try again.
+2020.10.08 17:17:00 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.41s
+[31merror[39m: app/controllers/ws.worksheet.sc:19:12: missing argument list for method ++ in trait MapOps
+Unapplied methods are only converted to functions when a function type is expected.
+You can make this conversion explicit by writing `++ _` or `++(_)` instead of `++`.
+val map3 = map1.++map2
+           ^^^^^^^
+[31merror[39m: app/controllers/ws.worksheet.sc:19:12: postfix operator map2 needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+val map3 = map1.++map2
+           ^^^^^^^^^^^
+2020.10.08 17:18:25 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.22s
+2020.10.08 17:18:38 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.59s
+[31merror[39m: app/controllers/ws.worksheet.sc:18:5: map2 is already defined as value map2
+val map2 = map2.zipWithIndex.map{case(v,i) => (v, i+1)}.toMap
+    ^^^^
+2020.10.08 17:19:11 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.18s
+2020.10.08 17:19:18 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.48s
+[31merror[39m: app/controllers/ws.worksheet.sc:13:22: no arguments allowed for nullary method getClass: (): Class[_ <: App.this.TrafficLight]
+list map (_.getClass(String)) zip Int 
+                     ^^^^^^
+2020.10.08 17:23:40 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.23s
+[31merror[39m: app/controllers/ws.worksheet.sc:13:14: value _1 is not a member of App.this.TrafficLight
+list.groupBy(_._1).mapValues(_.map(_._2))
+             ^^^^
+2020.10.08 17:24:43 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.18s
+2020.10.08 17:25:54 ERROR code navigation does not work for the file '/Users/tammy/OneDrive - Ordina/hello-world-play/app/controllers/ws.worksheet.sc' because the build target root is being compiled. Wait until compilation is finished and try again.
+[31merror[39m: app/controllers/ws.worksheet.sc:13:14: type mismatch;
+ found   : IndexedSeq[App.this.TrafficLight]
+ required: App.this.TrafficLight => ?
+list.groupBy(list.toIndexedSeq)
+             ^^^^^^^^^^^^^^^^^
+2020.10.08 17:27:03 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.17s
+2020.10.08 17:27:08 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.41s
+2020.10.08 17:27:13 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.46s
+[31merror[39m: app/controllers/ws.worksheet.sc:13:40: type mismatch;
+ found   : App.this.TrafficLight
+ required: (Int, String)
+list.foldLeft(Map.empty[Int,String])(_+_)
+                                       ^
+2020.10.08 17:30:25 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.22s
+2020.10.08 17:30:52 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.46s
+2020.10.08 17:31:14 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.41s
+2020.10.08 17:31:32 ERROR code navigation does not work for the file '/Users/tammy/OneDrive - Ordina/hello-world-play/app/controllers/ws.worksheet.sc' because the build target root is being compiled. Wait until compilation is finished and try again.
+2020.10.08 17:31:36 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.4s
+Oct 09, 2020 11:02:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21820
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala in Set[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play/app/controllers/TrafficLight.scala, 216, 216, 233)
