@@ -10,9 +10,9 @@ object TrafficLight {
     var list: mutable.Map[Int, String] = {
       mutable.Map (  
         1 -> "Green",
-        2 -> "Red",
-        3 -> "Orange",
-        4 -> "Red"
+        2 -> "Green",
+        3 -> "Red",
+        4 -> "Orange"
       )
     }
 

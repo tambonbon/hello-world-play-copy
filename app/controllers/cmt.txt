@@ -1,3 +1,5 @@
+ curl --header "Content-type: application/json" --request PUT --data '{"id": 5, "color": "Green"}' http://localhost:9000/traffic-light
+ 
   // def show(someId: Int) = Action { request => 
   //   TrafficLight.list
   //   .find(_.id == someId)

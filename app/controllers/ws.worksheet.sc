@@ -34,8 +34,7 @@ import scala.collection.mutable
       )
     }
 
-mapp.update(1,"Hi")
-mapp
+
 import play.api._
 import play.api.mvc._
 import play.api.libs.json._

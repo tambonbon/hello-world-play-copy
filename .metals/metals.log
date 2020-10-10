@@ -1437,3 +1437,315 @@ something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play
 2020.10.10 11:37:27 INFO  time: compiled root in 0.7s
 2020.10.10 11:37:29 INFO  compiling root (1 scala source)
 2020.10.10 11:37:29 INFO  time: compiled root in 0.76s
+Oct 10, 2020 11:39:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": "merge-conflict.conflict-diff:/Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala?%7B%22scheme%22%3A%22file%22%2C%22ranges%22%3A%5B%5B%5B%7B%22line%22%3A20%2C%22character%22%3A0%7D%2C%7B%22line%22%3A30%2C%22character%22%3A0%7D%5D%2C%5B%7B%22line%22%3A18%2C%22character%22%3A0%7D%2C%7B%22line%22%3A31%2C%22character%22%3A0%7D%5D%5D%5D%7D"
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "merge-conflict.conflict-diff" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:445)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:442)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:837)
+	... 16 more
+
+Oct 10, 2020 11:39:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": "merge-conflict.conflict-diff:/Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala?%7B%22scheme%22%3A%22file%22%2C%22ranges%22%3A%5B%5B%5B%7B%22line%22%3A20%2C%22character%22%3A0%7D%2C%7B%22line%22%3A30%2C%22character%22%3A0%7D%5D%2C%5B%7B%22line%22%3A18%2C%22character%22%3A0%7D%2C%7B%22line%22%3A31%2C%22character%22%3A0%7D%5D%5D%5D%7D"
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "merge-conflict.conflict-diff" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:445)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:442)
+	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:837)
+	... 16 more
+
+2020.10.10 11:59:33 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 6.33s
+[31merror[39m: app/controllers/ws.worksheet.sc:38:25: missing parameter type
+mapp.getOrElseUpdate(1, x => "Red")
+                        ^
+2020.10.10 12:01:27 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.39s
+[31merror[39m: app/controllers/ws.worksheet.sc:38:25: type mismatch;
+ found   : Int(0)
+ required: String
+mapp.getOrElseUpdate(1, 0)
+                        ^
+2020.10.10 12:01:43 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.33s
+2020.10.10 12:01:48 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.77s
+2020.10.10 12:02:48 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.2s
+2020.10.10 12:02:56 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.55s
+2020.10.10 12:03:01 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.5s
+2020.10.10 12:03:08 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.47s
+2020.10.10 12:03:14 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.13s
+[31merror[39m: app/controllers/ws.worksheet.sc:38:6: missing parameter type for expanded function ((<x$2: error>) => x$2._2)
+mapp(_._2)
+     ^
+2020.10.10 12:03:15 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.24s
+[31merror[39m: app/controllers/ws.worksheet.sc:38:6: missing parameter type for expanded function ((<x$2: error>) => x$2._2)
+mapp(_._2)
+     ^
+2020.10.10 12:03:17 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.23s
+Oct 10, 2020 12:06:08 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 10, 2020 12:06:08 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 10, 2020 12:06:08 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.fromIdentApply$1(Completions.scala:423)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:443)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+[31merror[39m: app/controllers/ws.worksheet.sc:39:23: missing parameter type for expanded function ((<x$2: error>) => scala.Tuple2(x$2, "Green"))
+  case (_, "Red") => (_, "Green") 
+                      ^
+2020.10.10 12:07:48 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.24s
+[33mwarning[39m: app/controllers/ws.worksheet.sc:38:9: match may not be exhaustive.
+It would fail on the following input: (_, _)
+mapp.map{
+        ^
+2020.10.10 12:08:18 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.51s
+[33mwarning[39m: app/controllers/ws.worksheet.sc:38:9: match may not be exhaustive.
+It would fail on the following input: (_, _)
+mapp.map{
+        ^
+2020.10.10 12:08:21 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.41s
+Oct 10, 2020 12:08:36 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 10, 2020 12:08:36 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 10, 2020 12:08:37 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.MetalsGlobal.metalsSeenFromType(MetalsGlobal.scala:663)
+	at scala.meta.internal.pc.completions.MatchCaseCompletions$CaseKeywordCompletion.<init>(MatchCaseCompletions.scala:49)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:490)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020.10.10 12:09:09 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.11s
+[33mwarning[39m: app/controllers/ws.worksheet.sc:38:9: match may not be exhaustive.
+It would fail on the following input: (_, _)
+mapp.map{
+        ^
+2020.10.10 12:09:31 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.41s
+2020.10.10 17:13:21 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.74s
+2020.10.10 19:05:30 INFO  compiling root (1 scala source)
+2020.10.10 19:05:30 INFO  time: compiled root in 0.42s
+Oct 10, 2020 7:09:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2487
+2020.10.10 19:14:45 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.46s
+2020.10.10 19:14:52 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.5s
+2020.10.10 19:19:43 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.39s
+2020.10.10 19:19:54 INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+2020.10.10 19:20:06 INFO  started: Metals version 0.9.4 in workspace '/Users/tammy/OneDrive - Ordina/hello-world-play-copy' for client vscode.
+2020.10.10 19:20:07 INFO  time: initialize in 1.18s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher18149175403835930299/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.10 19:20:08 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher18149175403835930299/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher18149175403835930299/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.10 19:20:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher5875014045960812378/bsp.socket'...
+Starting the bsp launcher for bloop...
+Waiting for the bsp connection to come up...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14525416276968120410/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14525416276968120410/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14525416276968120410/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher5875014045960812378/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher5875014045960812378/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.10 19:20:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.10 19:20:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.10 19:20:08 INFO  time: connected to build server in 0.5s
+2020.10.10 19:20:08 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.10 19:20:11 INFO  no build target: using presentation compiler with only scala-library
+2020.10.10 19:20:11 INFO  compiling root (8 scala sources and 1 java source)
+Oct 10, 2020 7:20:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Oct 10, 2020 7:20:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Oct 10, 2020 7:20:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2020.10.10 19:20:13 INFO  time: indexed workspace in 4.8s
+2020.10.10 19:20:13 INFO  Deduplicating compilation of root from bsp client 'Metals 0.9.4' (since 4.98s)
+2020.10.10 19:20:13 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.10 19:20:13 INFO  time: compiled root in 0.66s
+2020.10.10 19:23:56 INFO  compiling root (1 scala source)
+2020.10.10 19:23:56 INFO  time: compiled root in 0.97s
+2020.10.10 19:25:15 INFO  compiling root (1 scala source)
+2020.10.10 19:25:15 INFO  time: compiled root in 0.82s
+2020.10.10 21:34:42 INFO  compiling root (1 scala source)
+2020.10.10 21:34:43 INFO  time: compiled root in 1.04s
+Oct 10, 2020 9:34:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification

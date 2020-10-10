@@ -49,13 +49,33 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
         BadRequest(Json.obj("message" -> JsError.toJson(errors)))
       },
       light => {
-        list.update(light.id, light.color)
-        val json = Json.toJson(list)
-        Ok(json)
+        if (light.color == "Red") {
+          if (list.last._2 == "Green") {
+            list.update(light.id, light.color)
+            Ok(Json.toJson(list))
+          }
+          else BadRequest(Json.obj(("message" -> "Request forbidden")))
+        }
+        else if (light.color == "Orange") {
+          if (list.last._2 == "Red") {
+            list.update(light.id, light.color)
+            Ok(Json.toJson(list))
+          }
+          else BadRequest(Json.obj(("message" -> "Request forbidden")))
+          
+        }
+        else {
+          if (list.last._2 == "Orange") {
+            list.update(light.id, light.color)
+            Ok(Json.toJson(list))
+          }
+          else BadRequest(Json.obj(("message" -> "Request forbidden")))
+        }
+        // list.update(light.id, light.color)
+        // val json = Json.toJson(list)
+        // Ok(json)
       }
     )
   }
-  
 
-  
 }
