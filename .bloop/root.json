@@ -23,6 +23,8 @@
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.13/2.8.2/play-akka-http-server_2.13-2.8.2.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.13/2.8.2/filters-helpers_2.13-2.8.2.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-guice_2.13/2.8.2/play-guice_2.13-2.8.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.13/2.8.2/play-ahc-ws_2.13-2.8.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.13/2.8.2/play-ehcache_2.13-2.8.2.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.8.2/play_2.13-2.8.2.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar",
@@ -30,6 +32,14 @@
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.12/akka-http-core_2.13-10.1.12.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/4.2.3/guice-4.2.3.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.2.3/guice-assistedinject-4.2.3.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws_2.13/2.8.2/play-ws_2.13-2.8.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.13/2.1.2/play-ahc-ws-standalone_2.13-2.1.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/2.1.2/shaded-asynchttpclient-2.1.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/2.1.2/shaded-oauth-2.1.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-cache_2.13/2.8.2/play-cache_2.13-2.8.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/build-link/2.8.2/build-link-2.8.2.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar",
@@ -57,6 +67,10 @@
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.6.5/akka-stream_2.13-2.6.5.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.12/akka-parsing_2.13-10.1.12.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.13/2.1.2/play-ws-standalone_2.13-2.1.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.13/2.1.2/play-ws-standalone-xml_2.13-2.1.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.13/2.1.2/play-ws-standalone-json_2.13-2.1.2.jar",
+            "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.13/2.0.0/cachecontrol_2.13-2.0.0.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.8.2/play-exceptions-2.8.2.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0.jar",
             "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.10.3/jackson-module-scala_2.13-2.10.3.jar",
@@ -289,6 +303,40 @@
                     ]
                 },
                 {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ahc-ws_2.13",
+                    "version": "2.8.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ahc-ws_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.13/2.8.2/play-ahc-ws_2.13-2.8.2.jar"
+                        },
+                        {
+                            "name": "play-ahc-ws_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.13/2.8.2/play-ahc-ws_2.13-2.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ehcache_2.13",
+                    "version": "2.8.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ehcache_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.13/2.8.2/play-ehcache_2.13-2.8.2.jar"
+                        },
+                        {
+                            "name": "play-ehcache_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.13/2.8.2/play-ehcache_2.13-2.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.scala-lang.modules",
                     "name": "scala-xml_2.13",
                     "version": "1.2.0",
@@ -404,6 +452,142 @@
                             "name": "guice-assistedinject",
                             "classifier": "sources",
                             "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.2.3/guice-assistedinject-4.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws_2.13",
+                    "version": "2.8.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws_2.13/2.8.2/play-ws_2.13-2.8.2.jar"
+                        },
+                        {
+                            "name": "play-ws_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws_2.13/2.8.2/play-ws_2.13-2.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ahc-ws-standalone_2.13",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ahc-ws-standalone_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.13/2.1.2/play-ahc-ws-standalone_2.13-2.1.2.jar"
+                        },
+                        {
+                            "name": "play-ahc-ws-standalone_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.13/2.1.2/play-ahc-ws-standalone_2.13-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "shaded-asynchttpclient",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shaded-asynchttpclient",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/2.1.2/shaded-asynchttpclient-2.1.2.jar"
+                        },
+                        {
+                            "name": "shaded-asynchttpclient",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/2.1.2/shaded-asynchttpclient-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "shaded-oauth",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shaded-oauth",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/2.1.2/shaded-oauth-2.1.2.jar"
+                        },
+                        {
+                            "name": "shaded-oauth",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/2.1.2/shaded-oauth-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.cache",
+                    "name": "cache-api",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cache-api",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1.jar"
+                        },
+                        {
+                            "name": "cache-api",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-cache_2.13",
+                    "version": "2.8.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-cache_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-cache_2.13/2.8.2/play-cache_2.13-2.8.2.jar"
+                        },
+                        {
+                            "name": "play-cache_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-cache_2.13/2.8.2/play-cache_2.13-2.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.sf.ehcache",
+                    "name": "ehcache",
+                    "version": "2.10.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ehcache",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar"
+                        },
+                        {
+                            "name": "ehcache",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ehcache",
+                    "name": "jcache",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jcache",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar"
+                        },
+                        {
+                            "name": "jcache",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1-sources.jar"
                         }
                     ]
                 },
@@ -880,6 +1064,74 @@
                             "name": "aopalliance",
                             "classifier": "sources",
                             "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws-standalone_2.13",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.13/2.1.2/play-ws-standalone_2.13-2.1.2.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.13/2.1.2/play-ws-standalone_2.13-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws-standalone-xml_2.13",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone-xml_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.13/2.1.2/play-ws-standalone-xml_2.13-2.1.2.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.13/2.1.2/play-ws-standalone-xml_2.13-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws-standalone-json_2.13",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone-json_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.13/2.1.2/play-ws-standalone-json_2.13-2.1.2.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone-json_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.13/2.1.2/play-ws-standalone-json_2.13-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "cachecontrol_2.13",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cachecontrol_2.13",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.13/2.0.0/cachecontrol_2.13-2.0.0.jar"
+                        },
+                        {
+                            "name": "cachecontrol_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.13/2.0.0/cachecontrol_2.13-2.0.0-sources.jar"
                         }
                     ]
                 },

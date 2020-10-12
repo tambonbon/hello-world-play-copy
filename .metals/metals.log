@@ -1749,3 +1749,344 @@ WARNING: Unmatched cancel notification for request id 4
 2020.10.10 21:34:43 INFO  time: compiled root in 1.04s
 Oct 10, 2020 9:34:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+2020.10.10 21:43:13 INFO  compiling root (1 scala source)
+2020.10.10 21:43:13 INFO  time: compiled root in 0.97s
+2020.10.10 21:44:53 INFO  compiling root (1 scala source)
+2020.10.10 21:44:53 INFO  time: compiled root in 0.92s
+2020.10.10 21:48:31 INFO  compiling root (1 scala source)
+2020.10.10 21:48:31 INFO  time: compiled root in 0.86s
+2020.10.10 21:49:14 INFO  compiling root (1 scala source)
+2020.10.10 21:49:14 INFO  time: compiled root in 0.93s
+2020.10.11 11:44:18 INFO  compiling root (1 scala source)
+2020.10.11 11:44:19 INFO  time: compiled root in 1.14s
+2020.10.11 11:54:25 INFO  compiling root (1 scala source)
+2020.10.11 11:54:25 INFO  time: compiled root in 0.79s
+2020.10.11 12:05:22 INFO  compiling root (1 scala source)
+2020.10.11 12:05:22 INFO  time: compiled root in 0.16s
+2020.10.11 12:05:32 INFO  compiling root (1 scala source)
+2020.10.11 12:05:32 INFO  time: compiled root in 0.17s
+2020.10.11 12:05:33 INFO  compiling root (1 scala source)
+2020.10.11 12:05:33 INFO  time: compiled root in 0.14s
+2020.10.11 12:15:28 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 6.04s
+[31merror[39m: app/controllers/ws.worksheet.sc:45:9: Cannot find an implicit ExecutionContext. You might pass
+an (implicit ec: ExecutionContext) parameter to your method.
+
+The ExecutionContext is used to configure how and on which
+thread pools Futures will run, so the specific ExecutionContext
+that is selected is important.
+
+If your application does not define an ExecutionContext elsewhere,
+consider using Scala's global ExecutionContext by defining
+the following:
+
+implicit val ec: scala.concurrent.ExecutionContext = scala.concurrent.ExecutionContext.global
+val a = Future{ Thread.sleep(15*1000)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.11 12:15:33 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.4s
+2020.10.11 12:16:09 INFO  compiling root (1 scala source)
+2020.10.11 12:16:09 INFO  time: compiled root in 0.94s
+2020.10.11 12:16:12 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.9s
+2020.10.11 12:16:49 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.64s
+2020.10.11 12:17:08 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.62s
+2020.10.11 12:17:17 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.61s
+2020.10.11 12:17:21 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.53s
+2020.10.11 12:17:22 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.55s
+2020.10.11 12:17:25 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.44s
+2020.10.11 12:17:25 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.42s
+2020.10.11 12:17:25 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.38s
+2020.10.11 12:17:26 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.41s
+2020.10.11 12:17:26 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.43s
+2020.10.11 12:17:27 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.36s
+2020.10.11 12:17:26 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.35s
+2020.10.11 12:17:27 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.38s
+2020.10.11 12:17:28 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.36s
+2020.10.11 12:17:28 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.35s
+2020.10.11 12:17:28 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.36s
+2020.10.11 12:17:29 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.32s
+2020.10.11 12:17:29 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.32s
+2020.10.11 12:17:47 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.35s
+2020.10.11 12:17:49 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.32s
+[31merror[39m: app/controllers/ws.worksheet.sc:48:15: value b is not a member of Int
+possible cause: maybe a semicolon is missing before `value b`?
+val b = a.map(_*2
+              ^
+2020.10.11 12:17:50 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.2s
+2020.10.11 12:17:55 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.35s
+2020.10.11 12:17:57 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.34s
+2020.10.11 12:18:30 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.33s
+2020.10.11 12:18:42 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.33s
+2020.10.11 12:18:44 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.32s
+2020.10.11 12:18:48 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.34s
+2020.10.11 12:18:49 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.29s
+2020.10.11 12:18:50 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.29s
+2020.10.11 12:18:50 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.3s
+2020.10.11 12:18:53 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.34s
+2020.10.11 12:19:06 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.35s
+2020.10.11 12:19:16 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.32s
+2020.10.11 13:45:47 INFO  compiling root (1 scala source)
+2020.10.11 13:45:47 INFO  time: compiled root in 0.21s
+2020.10.11 13:47:58 INFO  compiling root (1 scala source)
+2020.10.11 13:47:58 INFO  time: compiled root in 0.92s
+2020.10.11 13:51:47 INFO  compiling root (1 scala source)
+2020.10.11 13:51:47 INFO  time: compiled root in 0.19s
+2020.10.11 13:52:16 INFO  running '/Users/tammy/.jabba/jdk/adopt@1.11.0-7/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/metals2638490850447192411/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.11 13:52:19 INFO  [info] welcome to sbt 1.3.13 (AdoptOpenJDK Java 11.0.7)
+2020.10.11 13:52:20 INFO  [info] loading settings for project hello-world-play-copy-build-build-build from metals.sbt ...
+2020.10.11 13:52:20 INFO  [info] loading project definition from /Users/tammy/OneDrive - Ordina/hello-world-play-copy/project/project/project
+2020.10.11 13:52:22 INFO  [info] loading settings for project hello-world-play-copy-build-build from metals.sbt ...
+2020.10.11 13:52:22 INFO  [info] loading project definition from /Users/tammy/OneDrive - Ordina/hello-world-play-copy/project/project
+2020.10.11 13:52:24 INFO  [success] Generated .bloop/hello-world-play-copy-build-build.json
+2020.10.11 13:52:24 INFO  [success] Total time: 2 s, completed 11 Oct 2020, 13:52:24
+2020.10.11 13:52:24 INFO  [info] loading settings for project hello-world-play-copy-build from plugins.sbt,metals.sbt ...
+2020.10.11 13:52:24 INFO  [info] loading project definition from /Users/tammy/OneDrive - Ordina/hello-world-play-copy/project
+2020.10.11 13:52:24 INFO  [success] Generated .bloop/hello-world-play-copy-build.json
+2020.10.11 13:52:25 INFO  [success] Total time: 1 s, completed 11 Oct 2020, 13:52:25
+2020.10.11 13:52:27 INFO  [info] loading settings for project root from build.sbt ...
+2020.10.11 13:52:27 INFO  [info] set current project to hello-world-play (in build file:/Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/)
+2020.10.11 13:52:32 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.11 13:52:36 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.10.11 13:52:36 INFO  [success] Generated .bloop/root.json
+2020.10.11 13:52:36 INFO  [success] Generated .bloop/root-test.json
+2020.10.11 13:52:36 INFO  [success] Total time: 8 s, completed 11 Oct 2020, 13:52:36
+2020.10.11 13:52:36 INFO  build tool exit: 0
+2020.10.11 13:52:36 INFO  time: ran 'sbt bloopInstall' in 20s
+2020.10.11 13:52:36 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher9886322639178582022/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop/root.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher9886322639178582022/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher9886322639178582022/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.11 13:52:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14936138294171985858/bsp.socket'...
+Starting the bsp launcher for bloop...
+Waiting for the bsp connection to come up...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher16984467409879793240/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher16984467409879793240/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher16984467409879793240/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14936138294171985858/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher14936138294171985858/bsp.socket...
+2020.10.11 13:52:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.11 13:52:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.11 13:52:36 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.11 13:52:38 INFO  time: indexed workspace in 1.34s
+2020.10.11 13:52:38 INFO  compiling root (1 scala source)
+2020.10.11 13:52:38 INFO  time: compiled root in 0.13s
+2020.10.11 13:53:04 INFO  compiling root (1 scala source)
+2020.10.11 13:53:04 INFO  time: compiled root in 0.18s
+2020.10.11 13:53:07 INFO  compiling root (1 scala source)
+2020.10.11 13:53:07 INFO  time: compiled root in 0.18s
+2020.10.11 13:53:49 INFO  compiling root (1 scala source)
+2020.10.11 13:53:49 INFO  time: compiled root in 0.16s
+2020.10.11 13:56:09 INFO  compiling root (1 scala source)
+2020.10.11 13:56:09 INFO  time: compiled root in 0.18s
+2020.10.11 13:56:35 INFO  compiling root (1 scala source)
+2020.10.11 13:56:35 INFO  time: compiled root in 59ms
+2020.10.11 13:56:45 INFO  compiling root (1 scala source)
+2020.10.11 13:56:45 INFO  time: compiled root in 57ms
+2020.10.11 13:56:54 INFO  compiling root (1 scala source)
+2020.10.11 13:56:54 INFO  time: compiled root in 0.17s
+2020.10.12 00:15:25 INFO  compiling root (1 scala source)
+2020.10.12 00:15:25 INFO  time: compiled root in 0.31s
+2020.10.12 00:19:42 INFO  compiling root (1 scala source)
+2020.10.12 00:19:42 INFO  time: compiled root in 0.89s
+2020.10.12 00:19:53 INFO  compiling root (1 scala source)
+2020.10.12 00:19:53 INFO  time: compiled root in 0.29s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in scala.concurrent.Future[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 2332, 2332, 2348)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in scala.concurrent.Future[play.api.libs.ws.WSRequest]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 2332, 2332, 2349)
+2020.10.12 00:23:57 INFO  compiling root (1 scala source)
+2020.10.12 00:23:57 INFO  time: compiled root in 0.2s
+2020.10.12 00:24:07 INFO  compiling root (1 scala source)
+2020.10.12 00:24:07 INFO  time: compiled root in 0.19s
+2020.10.12 00:24:38 INFO  compiling root (1 scala source)
+2020.10.12 00:24:38 INFO  time: compiled root in 0.18s
+2020.10.12 00:24:39 INFO  compiling root (1 scala source)
+2020.10.12 00:24:39 INFO  time: compiled root in 0.18s
+2020.10.12 00:25:45 INFO  compiling root (1 scala source)
+2020.10.12 00:25:45 INFO  time: compiled root in 0.18s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in scala.concurrent.Future[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 2573, 2573, 2589)
+2020.10.12 00:26:56 INFO  compiling root (1 scala source)
+2020.10.12 00:26:56 INFO  time: compiled root in 0.2s
+2020.10.12 00:27:09 INFO  compiling root (1 scala source)
+2020.10.12 00:27:09 INFO  time: compiled root in 0.19s
+2020.10.12 00:27:30 INFO  compiling root (1 scala source)
+2020.10.12 00:27:30 INFO  time: compiled root in 0.18s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in scala.concurrent.Future[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 2629, 2629, 2645)
+2020.10.12 00:27:53 INFO  compiling root (1 scala source)
+2020.10.12 00:27:53 INFO  time: compiled root in 73ms
+2020.10.12 10:29:50 INFO  compiling root (1 scala source)
+2020.10.12 10:29:51 INFO  time: compiled root in 1.03s
+2020.10.12 10:30:13 INFO  compiling root (1 scala source)
+2020.10.12 10:30:13 INFO  time: compiled root in 0.21s
+2020.10.12 10:30:24 INFO  compiling root (1 scala source)
+2020.10.12 10:30:24 INFO  time: compiled root in 0.93s
+2020.10.12 10:31:04 INFO  compiling root (1 scala source)
+2020.10.12 10:31:04 INFO  time: compiled root in 0.98s
+2020.10.12 10:32:24 INFO  compiling root (1 scala source)
+2020.10.12 10:32:24 INFO  time: compiled root in 0.92s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in scala.collection.mutable.Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 960, 968, 985)
+2020.10.12 10:38:55 INFO  compiling root (1 scala source)
+2020.10.12 10:38:56 INFO  time: compiled root in 1.2s
+2020.10.12 10:39:48 INFO  compiling root (1 scala source)
+2020.10.12 10:39:48 INFO  time: compiled root in 0.19s
+2020.10.12 10:43:44 INFO  compiling root (2 scala sources)
+2020.10.12 10:43:44 INFO  time: compiled root in 0.21s
+2020.10.12 10:43:56 INFO  compiling root (2 scala sources)
+2020.10.12 10:43:56 INFO  time: compiled root in 0.18s
+2020.10.12 10:44:40 INFO  compiling root (2 scala sources)
+2020.10.12 10:44:40 INFO  time: compiled root in 0.2s
+2020.10.12 10:44:52 INFO  compiling root (2 scala sources)
+2020.10.12 10:44:52 INFO  time: compiled root in 0.19s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in scala.collection.mutable.Map[Int,controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 960, 968, 990)
+2020.10.12 10:46:53 INFO  compiling root (2 scala sources)
+2020.10.12 10:46:53 INFO  time: compiled root in 0.19s
+2020.10.12 10:47:34 INFO  compiling root (2 scala sources)
+2020.10.12 10:47:34 INFO  time: compiled root in 0.18s
+2020.10.12 10:48:11 INFO  compiling root (2 scala sources)
+2020.10.12 10:48:11 INFO  time: compiled root in 0.19s
+2020.10.12 10:49:04 INFO  compiling root (2 scala sources)
+2020.10.12 10:49:04 INFO  time: compiled root in 0.19s
+2020.10.12 10:49:25 INFO  compiling root (2 scala sources)
+2020.10.12 10:49:25 INFO  time: compiled root in 0.96s
+2020.10.12 10:49:25 INFO  compiling root (1 scala source)
+2020.10.12 10:49:26 INFO  time: compiled root in 0.12s
+2020.10.12 10:49:46 INFO  compiling root (2 scala sources)
+2020.10.12 10:49:46 INFO  time: compiled root in 0.18s
+2020.10.12 10:50:04 INFO  compiling root (2 scala sources)
+2020.10.12 10:50:04 INFO  time: compiled root in 0.18s
+2020.10.12 10:50:28 INFO  compiling root (2 scala sources)
+2020.10.12 10:50:28 INFO  time: compiled root in 0.18s
+2020.10.12 10:50:30 INFO  compiling root (2 scala sources)
+2020.10.12 10:50:30 INFO  time: compiled root in 0.2s
+2020.10.12 10:50:42 INFO  compiling root (2 scala sources)
+2020.10.12 10:50:42 INFO  time: compiled root in 0.19s
+2020.10.12 10:50:47 INFO  compiling root (2 scala sources)
+2020.10.12 10:50:47 INFO  time: compiled root in 0.19s
+2020.10.12 10:50:55 INFO  compiling root (2 scala sources)
+2020.10.12 10:50:56 INFO  time: compiled root in 1.02s
+2020.10.12 10:51:44 INFO  compiling root (1 scala source)
+2020.10.12 10:51:45 INFO  time: compiled root in 1.17s
+2020.10.12 10:52:46 INFO  compiling root (1 scala source)
+2020.10.12 10:52:46 INFO  time: compiled root in 0.93s
+2020.10.12 13:06:11 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 2.22s
+2020.10.12 13:06:31 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.43s
+2020.10.12 13:06:34 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.37s
+2020.10.12 13:06:37 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.36s
+2020.10.12 13:14:09 INFO  compiling root (1 scala source)
+2020.10.12 13:14:10 INFO  time: compiled root in 1.08s
+2020.10.12 13:14:53 INFO  compiling root (1 scala source)
+2020.10.12 13:14:54 INFO  time: compiled root in 1.28s
+2020.10.12 13:41:56 INFO  compiling root (1 scala source)
+2020.10.12 13:41:56 INFO  time: compiled root in 77ms
+2020.10.12 13:42:14 INFO  compiling root (1 scala source)
+2020.10.12 13:42:14 INFO  time: compiled root in 65ms
+2020.10.12 13:42:16 INFO  compiling root (1 scala source)
+2020.10.12 13:42:16 INFO  time: compiled root in 81ms
+2020.10.12 13:42:29 INFO  compiling root (1 scala source)
+2020.10.12 13:42:29 INFO  time: compiled root in 84ms
+2020.10.12 13:42:32 INFO  compiling root (1 scala source)
+2020.10.12 13:42:32 INFO  time: compiled root in 64ms
+2020.10.12 13:42:46 INFO  compiling root (1 scala source)
+2020.10.12 13:42:46 INFO  time: compiled root in 64ms
+2020.10.12 13:43:01 INFO  compiling root (1 scala source)
+2020.10.12 13:43:01 INFO  time: compiled root in 71ms
+2020.10.12 13:43:12 INFO  compiling root (1 scala source)
+2020.10.12 13:43:12 INFO  time: compiled root in 62ms
+2020.10.12 13:43:17 INFO  compiling root (1 scala source)
+2020.10.12 13:43:17 INFO  time: compiled root in 60ms
+2020.10.12 13:43:29 INFO  compiling root (1 scala source)
+2020.10.12 13:43:29 INFO  time: compiled root in 61ms
+2020.10.12 13:45:02 INFO  compiling root (1 scala source)
+2020.10.12 13:45:02 INFO  time: compiled root in 0.18s
+2020.10.12 13:45:08 INFO  compiling root (1 scala source)
+2020.10.12 13:45:08 INFO  time: compiled root in 0.91s
+2020.10.12 13:48:59 INFO  compiling root (1 scala source)
+2020.10.12 13:48:59 INFO  time: compiled root in 0.89s
+Oct 12, 2020 1:51:15 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 12, 2020 1:51:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:239)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:26)
+
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala in scala.collection.mutable.Map[Int,<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala, 475, 483, 500)
+2020.10.12 13:51:41 INFO  compiling root (1 scala source)
+2020.10.12 13:51:41 INFO  time: compiled root in 0.18s
+2020.10.12 13:51:59 INFO  compiling root (1 scala source)
+2020.10.12 13:51:59 INFO  time: compiled root in 0.14s
+2020.10.12 13:52:00 INFO  compiling root (1 scala source)
+2020.10.12 13:52:00 INFO  time: compiled root in 0.14s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala in scala.collection.mutable.Map[Int,controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala, 475, 483, 505)
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala in scala.collection.mutable.Map[Int,controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala, 475, 483, 505)
+2020.10.12 13:52:19 INFO  compiling root (1 scala source)
+2020.10.12 13:52:19 INFO  time: compiled root in 0.81s
+2020.10.12 13:52:48 INFO  compiling root (1 scala source)
+2020.10.12 13:52:48 INFO  time: compiled root in 0.17s
+2020.10.12 13:53:30 INFO  compiling root (1 scala source)
+2020.10.12 13:53:30 INFO  time: compiled root in 0.17s
+2020.10.12 13:53:33 INFO  compiling root (1 scala source)
+2020.10.12 13:53:33 INFO  time: compiled root in 0.16s
+2020.10.12 13:53:34 INFO  compiling root (1 scala source)
+2020.10.12 13:53:34 INFO  time: compiled root in 0.16s
+2020.10.12 13:53:54 INFO  compiling root (1 scala source)
+2020.10.12 13:53:54 INFO  time: compiled root in 0.17s
+2020.10.12 13:55:03 INFO  compiling root (1 scala source)
+2020.10.12 13:55:03 INFO  time: compiled root in 0.17s
+2020.10.12 13:55:04 INFO  compiling root (1 scala source)
+2020.10.12 13:55:04 INFO  time: compiled root in 0.16s
+2020.10.12 13:56:15 INFO  compiling root (1 scala source)
+2020.10.12 13:56:15 INFO  time: compiled root in 0.16s
+2020.10.12 13:56:30 INFO  compiling root (1 scala source)
+2020.10.12 13:56:30 INFO  time: compiled root in 0.16s
+2020.10.12 13:56:40 INFO  compiling root (1 scala source)
+2020.10.12 13:56:40 INFO  time: compiled root in 0.16s
+2020.10.12 13:56:48 INFO  compiling root (1 scala source)
+2020.10.12 13:56:48 INFO  time: compiled root in 0.17s
+2020.10.12 13:56:56 INFO  compiling root (1 scala source)
+2020.10.12 13:56:56 INFO  time: compiled root in 0.17s
+2020.10.12 13:57:09 INFO  compiling root (1 scala source)
+2020.10.12 13:57:09 INFO  time: compiled root in 0.97s
+2020.10.12 14:24:43 INFO  compiling root (1 scala source)
+2020.10.12 14:24:44 INFO  time: compiled root in 1.27s
+2020.10.12 14:25:06 INFO  compiling root (1 scala source)
+2020.10.12 14:25:06 INFO  time: compiled root in 0.8s
+2020.10.12 14:29:53 INFO  compiling root (1 scala source)
+2020.10.12 14:29:53 INFO  time: compiled root in 0.89s
+2020.10.12 14:30:32 INFO  compiling root (1 scala source)
+2020.10.12 14:30:33 INFO  time: compiled root in 1.01s
+2020.10.12 14:31:57 INFO  compiling root (1 scala source)
+2020.10.12 14:31:57 INFO  time: compiled root in 0.89s
+2020.10.12 14:34:22 INFO  compiling root (1 scala source)
+2020.10.12 14:34:22 INFO  time: compiled root in 0.91s
+2020.10.12 14:34:39 INFO  compiling root (1 scala source)
+2020.10.12 14:34:39 INFO  time: compiled root in 0.9s

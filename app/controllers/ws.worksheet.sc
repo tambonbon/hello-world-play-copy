@@ -34,9 +34,20 @@ import scala.collection.mutable
       )
     }
 
+    mapp.keySet.contains(5)
 
 import play.api._
 import play.api.mvc._
 import play.api.libs.json._
 import play.api.libs.functional.syntax._
 import scala.collection.mutable
+import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.{Failure, Success}
+
+val a = Future{ Thread.sleep(1*1000); 42}
+val b = a.map(_*2)
+b
+b
+
+b
