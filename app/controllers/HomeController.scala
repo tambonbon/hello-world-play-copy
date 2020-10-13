@@ -10,14 +10,15 @@ import views.html.defaultpages.error
 import scala.collection.mutable
 import scala.concurrent.Future
 import scala.concurrent.java8.FuturesConvertersImpl.P
-// import play.api.libs.ws._
+import play.api.libs.ws._
 import scala.concurrent.duration._
+import play.api.data.validation.Invalid
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
  */
 @Singleton
-class HomeController @Inject()( val controllerComponents: ControllerComponents) extends BaseController {
+class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
 
   /**
    * Create an Action to render an HTML page.
@@ -26,11 +27,11 @@ class HomeController @Inject()( val controllerComponents: ControllerComponents) 
    * will be called when the application receives a `GET` request with
    * a path of `/`.
    */
-
+  implicit val ec: scala.concurrent.ExecutionContext = scala.concurrent.ExecutionContext.global
   def index() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
   }
-  def toTrafficLight(map: mutable.Map[Int, TrafficLight]): List[TrafficLight] = {
+  def toTrafficLight(map: Map[Int, TrafficLight]): List[TrafficLight] = {
     map.toList.map(x => x._2 )
   }
   def all = Action { request => 
@@ -47,7 +48,7 @@ class HomeController @Inject()( val controllerComponents: ControllerComponents) 
     .getOrElse(NotFound("No JSON found"))
   }
 
-  def save(tl: mutable.Map[Int, TrafficLight]) = { list = list ++ tl } // to show lights in order
+  def save(tl: Map[Int, TrafficLight]) = { list = list ++ tl } // to show lights in order
   
   def update = Action(parse.json) { request => 
     val result = request.body.validate[TrafficLight]
@@ -59,56 +60,54 @@ class HomeController @Inject()( val controllerComponents: ControllerComponents) 
         if (list.keySet.contains(light.id)) { // to check if the id was created
           if (light.color == "Red") {
             if (list(light.id).color == "Orange") {
-              save(mutable.Map(light.id -> light))
+              save(Map(light.id -> light))
               Ok(Json.toJson(toTrafficLight(list)))
             }
             else BadRequest(Json.obj("message" -> "Request forbidden"))
           }
           else if (light.color == "Orange") {
             if (list(light.id).color == "Green") { 
-              save(mutable.Map(light.id -> light))
+              save(Map(light.id -> light))
               Ok(Json.toJson(toTrafficLight(list)))
             }
             else BadRequest(Json.obj("message" -> "Request forbidden"))
           }
           else {
             if (list(light.id).color == "Red") {
-              save(mutable.Map(light.id -> light))
+              save(Map(light.id -> light))
               Ok(Json.toJson(toTrafficLight(list)))
             }
             else BadRequest(Json.obj("message" -> "Request forbidden"))
               
           }
         }
-        else save(mutable.Map(light.id -> light)) 
+        else save(Map(light.id -> light)) // create a new light
         Ok(Json.toJson(toTrafficLight(list)))
         
       }
       
     )
   }
-  // def saveAsync = Action.async(parse.json) { request => 
-  //   val response: Future[WSRequest] = 
-  //     ws.url("http://localhost:9000")
-  //       .addHttpHeaders("Accept" -> "application/json")
-  //       .addQueryStringParameters("search" -> "play")
-  //       .withRequestTimeout(10000.millis)
-  //       .get()
+
+
+
+  // def updateAsync = Action.async(parse.json) { request => 
+  //   val result = request.body.validate[TrafficLight]
+  //   val light = toGreen(result)
+  //   result.fold(
+  //     errors => {
+  //       BadRequest(Json.obj("message" -> JsError.toJson(errors)))
+  //     },
+
+  //   )
+  // }
 
   //   val json: Future[JsValue] = response.map(_.json)
 
   //   val result: Future[]
       
   // }
-  // def toGreen(fromLight: String): Future[TrafficLight] = {
-  //   val request: WSRequest = 
-  //     request
-  //     .addHttpHeaders("Accept" -> "application/json")
-  //     .addQueryStringParameters("search" -> "play")
-  //     .withRequestTimeout(10000.millis)
-        
-  //   val json = Future[TrafficLight]
-  // }
+
 
 /*   def saveAsync = Action.async(parse.json) { request => 
     val result = request.body.validate[TrafficLight]// request.body.validate[TrafficLight]

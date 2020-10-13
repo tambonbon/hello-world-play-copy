@@ -7,15 +7,15 @@ import scala.collection.mutable
 
 case class TrafficLight (id: Int, color: String)
 object TrafficLight {
-    var list: mutable.Map[Int, TrafficLight] = {
-      mutable.Map (  
+    var list: Map[Int, TrafficLight] = {
+      Map (  
         1 -> TrafficLight(1, "Green"),
         // 2 -> "Green",
         2 -> TrafficLight(2, "Orange"),
         3 -> TrafficLight(3, "Red")
       )
     }
-    def save(tl: mutable.Map[Int, TrafficLight]) = { list = list ++ tl }
+    
 // I prefer the following syntax of de-serialize and serialize
     implicit object TrafficLightFormat extends Format[TrafficLight] {
         // De-serialize (JSON string -> TrafficLight object)

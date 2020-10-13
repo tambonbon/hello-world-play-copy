@@ -2090,3 +2090,242 @@ something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play
 2020.10.12 14:34:22 INFO  time: compiled root in 0.91s
 2020.10.12 14:34:39 INFO  compiling root (1 scala source)
 2020.10.12 14:34:39 INFO  time: compiled root in 0.9s
+2020.10.12 14:47:31 INFO  compiling root (1 scala source)
+2020.10.12 14:47:31 INFO  time: compiled root in 0.89s
+2020.10.12 17:49:23 INFO  skipping build import with status 'Installed'
+Oct 12, 2020 5:49:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Oct 12, 2020 5:49:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.10.12 17:53:27 INFO  compiling root (1 scala source)
+2020.10.12 17:53:27 INFO  time: compiled root in 0.21s
+2020.10.12 17:53:34 INFO  compiling root (1 scala source)
+2020.10.12 17:53:34 INFO  time: compiled root in 81ms
+2020.10.12 17:53:36 INFO  compiling root (1 scala source)
+2020.10.12 17:53:36 INFO  time: compiled root in 0.35s
+2020.10.12 18:04:39 INFO  compiling root (1 scala source)
+2020.10.12 18:04:41 INFO  time: compiled root in 1.42s
+2020.10.12 21:51:25 INFO  compiling root (1 scala source)
+2020.10.12 21:51:25 INFO  time: compiled root in 0.3s
+2020.10.12 21:51:33 INFO  compiling root (1 scala source)
+2020.10.12 21:51:33 INFO  time: compiled root in 73ms
+2020.10.12 21:53:28 INFO  compiling root (1 scala source)
+2020.10.12 21:53:28 INFO  time: compiled root in 0.19s
+2020.10.12 21:56:32 INFO  compiling root (1 scala source)
+2020.10.12 21:56:32 INFO  time: compiled root in 0.19s
+Oct 12, 2020 9:57:00 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 12, 2020 9:57:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedClassDef(Typers.scala:1889)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5882)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.10.12 21:57:21 INFO  compiling root (1 scala source)
+2020.10.12 21:57:22 INFO  time: compiled root in 1.81s
+2020.10.12 21:57:22 INFO  compiling root (1 scala source)
+2020.10.12 21:57:22 INFO  time: compiled root in 0.46s
+Oct 12, 2020 9:59:12 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 3275, count -1, length 4490
+2020.10.12 22:00:56 INFO  compiling root (1 scala source)
+2020.10.12 22:00:56 INFO  time: compiled root in 0.2s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala in play.api.libs.json.Reads[<error>]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/HomeController.scala, 3267, 3267, 3282)
+2020.10.12 22:15:58 INFO  compiling root (1 scala source)
+2020.10.12 22:15:58 INFO  time: compiled root in 0.21s
+2020.10.12 22:17:19 INFO  compiling root (1 scala source)
+2020.10.12 22:17:19 INFO  time: compiled root in 0.19s
+Oct 12, 2020 10:17:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 3678, count -2, length 5194
+java.lang.StringIndexOutOfBoundsException: offset 3678, count -2, length 5194
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1235)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1258)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:376)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:374)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:199)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:310)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:304)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5(SignatureHelpProvider.scala:340)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5$adapted(SignatureHelpProvider.scala:317)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:553)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:551)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:920)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:890)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3(SignatureHelpProvider.scala:317)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3$adapted(SignatureHelpProvider.scala:316)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:553)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:551)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:920)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:890)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:304)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:273)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+Oct 12, 2020 10:17:34 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 12, 2020 10:17:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:419)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:136)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:109)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:98)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:963)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:811)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2020.10.12 22:17:40 INFO  compiling root (1 scala source)
+2020.10.12 22:17:40 INFO  time: compiled root in 0.16s
+2020.10.12 22:17:42 INFO  compiling root (1 scala source)
+2020.10.12 22:17:42 INFO  time: compiled root in 0.93s
+2020.10.12 22:20:17 INFO  compiling root (1 scala source)
+2020.10.12 22:20:17 INFO  time: compiled root in 0.9s
+2020.10.12 22:20:17 INFO  compiling root (1 scala source)
+2020.10.12 22:20:19 INFO  time: compiled root in 0.43s
+2020.10.12 22:41:51 INFO  shutting down Metals
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.10.13 12:38:14 INFO  started: Metals version 0.9.4 in workspace '/Users/tammy/OneDrive - Ordina/hello-world-play-copy' for client vscode.
+2020.10.13 12:38:15 INFO  time: initialize in 1.01s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher15306698369625818870/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.13 12:38:16 INFO  skipping build import with status 'Installed'
+Waiting for the bsp connection to come up...
+2020.10.13 12:38:18 INFO  no build target: using presentation compiler with only scala-library
+2020.10.13 12:38:18 WARN  no build target for: /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/HomeController.scala
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /Users/tammy/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/tammy/OneDrive - Ordina/hello-world-play-copy/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher15306698369625818870/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher15306698369625818870/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.13 12:38:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher12276002953467169722/bsp.socket'...
+Starting the bsp launcher for bloop...
+Waiting for the bsp connection to come up...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher11873751262723276795/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher11873751262723276795/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher11873751262723276795/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher12276002953467169722/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/gm/938jqbyx7rx0cf8wh6fgjxnh0000gp/T/bsp-launcher12276002953467169722/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.13 12:38:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.13 12:38:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tammy/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.13 12:38:20 INFO  time: connected to build server in 3.56s
+2020.10.13 12:38:20 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.13 12:38:20 INFO  time: imported build in 0.14s
+2020.10.13 12:38:23 INFO  time: indexed workspace in 3.33s
+2020.10.13 12:38:24 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.13 12:38:31 INFO  time: compiled root in 6.97s
+2020.10.13 12:38:31 INFO  compiling root-test (1 scala source)
+2020.10.13 12:38:31 INFO  time: compiled root-test in 0.34s
+2020.10.13 12:40:09 INFO  compiling root-test (1 scala source)
+2020.10.13 12:40:09 INFO  time: compiled root-test in 0.32s
+2020.10.13 12:44:09 INFO  compiling root-test (1 scala source)
+2020.10.13 12:44:09 INFO  time: compiled root-test in 0.29s
+2020.10.13 12:52:56 INFO  compiling root (1 scala source)
+2020.10.13 12:52:57 INFO  time: compiled root in 1.25s
+2020.10.13 12:53:02 INFO  compiling root-test (1 scala source)
+2020.10.13 12:53:03 INFO  time: compiled root-test in 1.13s
+2020.10.13 12:55:20 INFO  compiling root (1 scala source)
+2020.10.13 12:55:20 INFO  time: compiled root in 0.24s
+2020.10.13 12:55:39 INFO  compiling root (1 scala source)
+2020.10.13 12:55:39 INFO  time: compiled root in 91ms
+2020.10.13 12:55:43 INFO  compiling root (1 scala source)
+2020.10.13 12:55:43 INFO  time: compiled root in 83ms
+2020.10.13 13:17:02 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 6.78s
+2020.10.13 13:18:00 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 1.04s
+2020.10.13 13:18:09 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.74s
+2020.10.13 13:18:09 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.64s
+2020.10.13 13:18:14 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.69s
+2020.10.13 13:19:05 INFO  
+2020.10.13 13:19:05 INFO  Template applied in /Users/tammy/OneDrive - Ordina/./hello-world
+2020.10.13 13:19:05 INFO  
+2020.10.13 13:19:05 INFO  build tool exit: 0
+2020.10.13 13:19:05 INFO  time: ran 'giter8.Giter8' in 2.79s
+2020.10.13 14:18:02 INFO  compiling root (1 scala source)
+2020.10.13 14:18:03 INFO  time: compiled root in 1.24s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala in scala.collection.mutable.Map[Int,controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala, 247, 255, 277)
+2020.10.13 14:19:42 INFO  compiling root (1 scala source)
+2020.10.13 14:19:42 INFO  time: compiled root in 0.86s
+2020.10.13 14:19:42 INFO  compiling root (1 scala source)
+2020.10.13 14:19:43 INFO  time: compiled root in 0.24s
+2020.10.13 14:19:43 INFO  compiling root (1 scala source)
+2020.10.13 14:19:43 INFO  time: compiled root in 0.27s
+2020.10.13 14:19:43 INFO  compiling root (1 scala source)
+2020.10.13 14:19:43 INFO  time: compiled root in 0.18s
+2020.10.13 14:20:10 INFO  compiling root (2 scala sources)
+2020.10.13 14:20:11 INFO  time: compiled root in 1.36s

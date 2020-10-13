@@ -47,7 +47,20 @@ import scala.util.{Failure, Success}
 
 val a = Future{ Thread.sleep(1*1000); 42}
 val b = a.map(_*2)
-b
-b
 
-b
+def timedFuture[T](future: Future[T]) = {
+    val start = System.currentTimeMillis()
+    future.onComplete({
+      case _ => println(s"Future took ${System.currentTimeMillis() - start} ms")
+    })
+    future
+  }
+  
+  // I want to be able to measure how long this function would take
+  def wantToMeasure = Future{
+    Thread.sleep(500)
+    "Foo"
+  }
+
+  val result1 = timedFuture(wantToMeasure)
+  result1

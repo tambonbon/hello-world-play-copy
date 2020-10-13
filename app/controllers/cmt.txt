@@ -94,3 +94,24 @@
 //     def update(tl: TrafficLight, someId: Int): TrafficLight = { tl.copy(id = someId)}
 
     // def update(id: Int, color: String): JsObject = { list.[JsObject] ++  ("id" -> id) }
+
+      def parseLight[A](response: WSResponse)(implicit reads: Reads[A]): Future[A] = {
+    Json.fromJson[A](response.json) match {
+      case JsSuccess(value, _) => Future.successful(value)
+      case error: JsError => Future.failed(new Exception("Failed"))
+    }
+  }
+  def toGreen1(fromLight: TrafficLight): Future[TrafficLight] = {
+    ws.url(s"http://localhost:9000/traffic-light")
+    .put(Json.toJson(fromLight))
+    .flatMap(parseLight[TrafficLight](_))
+  }
+   
+  def toGreen(fromLight: TrafficLight): Future[TrafficLight] = {
+    ws.url(s"http://localhost:9000/traffic-light")
+    .addHttpHeaders("Accept" -> "application/json")
+    .addQueryStringParameters("search" -> "play")
+    .withRequestTimeout(10000.millis)
+    .get()
+    .map(_.json.as[TrafficLight])
+  }
