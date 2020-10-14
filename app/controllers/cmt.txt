@@ -1,29 +1,18 @@
  curl --header "Content-type: application/json" --request PUT --data '{"id": 4, "color": "Orange"}' http://localhost:9000/traffic-light
  
-  // def show(someId: Int) = Action { request => 
-  //   TrafficLight.list
-  //   .find(_.id == someId)
-  //   .map { tl => 
-  //     Ok(Json.obj("message" -> tl))
-  //   }
-  //   .getOrElse(NotFound("No JSON found"))
-    
-  // }
-  // def traffic(id: Option[Int]) = Action(parse.json) { request => 
-  //   val idReads: Reads[TrafficLight] = (JsPath \ "id").read[TrafficLight]
-  //   val json = Json.toJson(TrafficLight.list)
-  //   val result: JsResult[TrafficLight] = json.validate[TrafficLight](idReads)
-  //   result match {
-  //     case JsError(errors) => BadRequest(Json.obj("message" -> JsError.toJson(errors)))
-  //     case JsSuccess(value, path) => Ok(Json.obj("message" -> value.id))
-  //   }
-  //   // result.fold(
-  //   //   errors => { BadRequest(Json.obj("message" -> JsError.toJson(errors)))},
-  //   //   light => {
-  //   //     Ok(Json.obj(light))
-  //   //   }
-  //   // )
-    
+if (list(light.id).color == "Orange" && list(light.id).color == "Red") {
+              save(Map(light.id -> light))
+              Ok(Json.toJson(toTrafficLight(list)))
+            }
+            else if (list(light.id).color == "Green") {
+              val temp: TrafficLight = TrafficLight(light.id, "Orange")
+              save(Map(light.id -> temp))
+              Ok(Json.toJson(toTrafficLight(list)))
+              Thread.sleep(5000)
+              save(Map(light.id -> light))
+              Ok(Json.toJson(toTrafficLight(list)))
+
+            }
   // }
   // // def update1 = Action(parse.json) { request => 
   // //   val result = request.body.validate[TrafficLight]

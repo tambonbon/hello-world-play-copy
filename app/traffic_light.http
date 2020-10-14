@@ -1,5 +1,8 @@
  ###
-  GET http://localhost:9000/traffic-light
+ GET http://localhost:9000/
+ 
+ ###
+GET http://localhost:9000/traffic-light
 ###
 
 GET http://localhost:9000/traffic-light/3
@@ -9,8 +12,10 @@ PUT http://localhost:9000/traffic-light
 content-type:  application/json
 
 {
-    "id" : 26,
-    "color" : "Orange"
+    "id" : 3,
+    "color" : "Green"
 }
 
 ###
+
+# GET http://localhost:9000/avail

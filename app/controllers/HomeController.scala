@@ -9,16 +9,18 @@ import TrafficLight._
 import views.html.defaultpages.error
 import scala.collection.mutable
 import scala.concurrent.Future
-import scala.concurrent.java8.FuturesConvertersImpl.P
 import play.api.libs.ws._
 import scala.concurrent.duration._
 import play.api.data.validation.Invalid
+import play.api.libs.concurrent.Futures
 /**
  * This controller creates an `Action` to handle HTTP requests to the
  * application's home page.
  */
 @Singleton
-class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
+class HomeController @Inject()(val ws: WSClient,
+       val controllerComponents: ControllerComponents,
+       val futures: Futures) extends BaseController {
 
   /**
    * Create an Action to render an HTML page.
@@ -89,15 +91,48 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     )
   }
 
+  /* To create a Future[Result] we need another future first: 
+    the future that will give us the actual value we need to compute the result: */
+  def toRed(from: TrafficLight): Future[TrafficLight] =  from match {
+    case TrafficLight(_, "Red") => Future.successful(from)
+    case TrafficLight(_, "Orange") => Future.successful(TrafficLight(from.id, "Red"))
+    case TrafficLight(_, "Green") => Future.successful(TrafficLight(from.id, "Red"))
+    case _ => Future.failed(new Exception("Failed"))
+  }
+  
+  def updateAsync = Action.async(parse.json) { request =>
+    val result = request.body.validate[TrafficLight]
+    
+    result.fold(
+      errors => { 
+        Future.successful(BadRequest(Json.obj("message" -> JsError.toJson(errors))))
+      },
+      light => {
+        
+        // (Ok(Json.toJson(toRed(light))))
+      }
+    )
+  }
+  
+  // Future {
+  //   if (from.color == "Orange") TrafficLight(from.id, "Red") 
+  //   else {
 
-
+  //   }
+  // }
+  def availability = Action.async {
+    val response: Future[WSResponse] = ws.url("http://localhost:9000/traffic-light1").get()
+    val siteAvailable: Future[Boolean] = response.map { r => 
+      r.status == 200
+    }
+    siteAvailable.map { isAvailable =>
+      if (isAvailable) Ok("The Play site is up")
+      else Ok("The Play site is down")
+    }
+  }
+  
   // def updateAsync = Action.async(parse.json) { request => 
-  //   val result = request.body.validate[TrafficLight]
-  //   val light = toGreen(result)
-  //   result.fold(
-  //     errors => {
-  //       BadRequest(Json.obj("message" -> JsError.toJson(errors)))
-  //     },
+  
 
   //   )
   // }

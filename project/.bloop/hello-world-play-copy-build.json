@@ -264,7 +264,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Library/Java/JavaVirtualMachines/jdk-15.jdk/Contents/Home",
+                "home": "/Users/tammy/.jabba/jdk/adopt@1.11.0-7/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/tammy/OneDrive - Ordina/hello-world-play-copy/project"
                 ]
