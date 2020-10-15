@@ -3373,3 +3373,713 @@ something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play
 2020.10.14 16:23:28 INFO  time: compiled root in 0.19s
 2020.10.14 16:37:11 INFO  compiling root (2 scala sources)
 2020.10.14 16:37:11 INFO  time: compiled root in 0.23s
+Oct 14, 2020 7:27:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13728
+2020.10.14 19:31:25 INFO  compiling root (2 scala sources)
+2020.10.14 19:31:25 INFO  time: compiled root in 0.37s
+2020.10.14 19:41:09 INFO  compiling root (2 scala sources)
+2020.10.14 19:41:10 INFO  time: compiled root in 1.24s
+2020.10.14 19:41:43 INFO  compiling root (2 scala sources)
+2020.10.14 19:41:43 INFO  time: compiled root in 99ms
+2020.10.14 19:44:59 INFO  compiling root (2 scala sources)
+2020.10.14 19:44:59 INFO  time: compiled root in 62ms
+2020.10.14 19:44:59 INFO  compiling root (2 scala sources)
+2020.10.14 19:44:59 INFO  time: compiled root in 63ms
+2020.10.14 19:45:00 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:00 INFO  time: compiled root in 81ms
+2020.10.14 19:45:00 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:00 INFO  time: compiled root in 63ms
+2020.10.14 19:45:06 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:06 INFO  time: compiled root in 70ms
+2020.10.14 19:45:10 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:10 INFO  time: compiled root in 80ms
+2020.10.14 19:45:23 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:23 INFO  time: compiled root in 70ms
+2020.10.14 19:45:23 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:23 INFO  time: compiled root in 40ms
+2020.10.14 19:45:23 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:23 INFO  time: compiled root in 59ms
+2020.10.14 19:45:23 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:23 INFO  time: compiled root in 30ms
+2020.10.14 19:45:29 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:29 INFO  time: compiled root in 69ms
+2020.10.14 19:45:34 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:34 INFO  time: compiled root in 0.1s
+2020.10.14 19:45:34 INFO  compiling root (2 scala sources)
+2020.10.14 19:45:34 INFO  time: compiled root in 40ms
+2020.10.14 19:46:02 INFO  compiling root (2 scala sources)
+2020.10.14 19:46:02 INFO  time: compiled root in 66ms
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala in scala.concurrent.Future[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala, 1652, 1652, 1672)
+2020.10.14 19:46:54 INFO  compiling root (2 scala sources)
+2020.10.14 19:46:54 INFO  time: compiled root in 0.69s
+2020.10.14 19:47:02 INFO  compiling root (2 scala sources)
+2020.10.14 19:47:02 INFO  time: compiled root in 59ms
+2020.10.14 19:47:21 INFO  compiling root (2 scala sources)
+2020.10.14 19:47:21 INFO  time: compiled root in 0.23s
+2020.10.14 19:48:23 INFO  compiling root (2 scala sources)
+2020.10.14 19:48:23 INFO  time: compiled root in 0.2s
+Oct 14, 2020 7:48:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: offset 1839, count -10, length 2891
+java.lang.StringIndexOutOfBoundsException: offset 1839, count -10, length 2891
+	at java.base/java.lang.String.checkBoundsOffCount(String.java:3304)
+	at java.base/java.lang.String.rangeCheck(String.java:280)
+	at java.base/java.lang.String.<init>(String.java:276)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1235)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1258)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:376)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:374)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:199)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:310)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:304)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5(SignatureHelpProvider.scala:340)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5$adapted(SignatureHelpProvider.scala:317)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:553)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:551)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:920)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:890)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3(SignatureHelpProvider.scala:317)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3$adapted(SignatureHelpProvider.scala:316)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:553)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:551)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:920)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:890)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:316)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:304)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:273)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:27)
+
+2020.10.14 19:48:56 INFO  compiling root (2 scala sources)
+2020.10.14 19:48:56 INFO  time: compiled root in 0.17s
+2020.10.14 19:49:11 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:11 INFO  time: compiled root in 77ms
+2020.10.14 19:49:28 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:28 INFO  time: compiled root in 0.21s
+2020.10.14 19:49:29 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:29 INFO  time: compiled root in 0.14s
+2020.10.14 19:49:32 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:32 INFO  time: compiled root in 0.18s
+2020.10.14 19:49:37 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:37 INFO  time: compiled root in 0.19s
+2020.10.14 19:49:58 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:58 INFO  time: compiled root in 0.18s
+2020.10.14 19:49:59 INFO  compiling root (2 scala sources)
+2020.10.14 19:49:59 INFO  time: compiled root in 0.14s
+2020.10.14 19:50:00 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:00 INFO  time: compiled root in 0.18s
+2020.10.14 19:50:00 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:00 INFO  time: compiled root in 0.15s
+2020.10.14 19:50:00 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:01 INFO  time: compiled root in 0.13s
+2020.10.14 19:50:01 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:01 INFO  time: compiled root in 0.12s
+2020.10.14 19:50:16 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:16 INFO  time: compiled root in 0.19s
+2020.10.14 19:50:37 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:37 INFO  time: compiled root in 0.18s
+2020.10.14 19:50:37 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:37 INFO  time: compiled root in 0.15s
+2020.10.14 19:50:43 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:43 INFO  time: compiled root in 0.18s
+2020.10.14 19:50:49 INFO  compiling root (2 scala sources)
+2020.10.14 19:50:49 INFO  time: compiled root in 0.17s
+2020.10.14 19:51:55 INFO  compiling root (2 scala sources)
+2020.10.14 19:51:55 INFO  time: compiled root in 0.19s
+2020.10.14 19:52:04 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:04 INFO  time: compiled root in 0.39s
+2020.10.14 19:52:19 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:19 INFO  time: compiled root in 0.19s
+2020.10.14 19:52:21 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:21 INFO  time: compiled root in 0.15s
+2020.10.14 19:52:21 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:21 INFO  time: compiled root in 0.13s
+2020.10.14 19:52:21 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:21 INFO  time: compiled root in 0.13s
+2020.10.14 19:52:21 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:22 INFO  time: compiled root in 0.14s
+2020.10.14 19:52:23 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:23 INFO  time: compiled root in 0.18s
+2020.10.14 19:52:47 INFO  compiling root (2 scala sources)
+2020.10.14 19:52:47 INFO  time: compiled root in 0.18s
+2020.10.14 19:55:30 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:30 INFO  time: compiled root in 0.18s
+2020.10.14 19:55:31 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:31 INFO  time: compiled root in 0.14s
+2020.10.14 19:55:31 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:31 INFO  time: compiled root in 0.14s
+2020.10.14 19:55:31 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:31 INFO  time: compiled root in 0.12s
+2020.10.14 19:55:33 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:33 INFO  time: compiled root in 0.14s
+2020.10.14 19:55:33 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:33 INFO  time: compiled root in 0.14s
+2020.10.14 19:55:33 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:33 INFO  time: compiled root in 0.15s
+2020.10.14 19:55:33 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:33 INFO  time: compiled root in 0.14s
+2020.10.14 19:55:33 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:34 INFO  time: compiled root in 0.13s
+2020.10.14 19:55:34 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:34 INFO  time: compiled root in 0.15s
+2020.10.14 19:55:35 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:35 INFO  time: compiled root in 0.19s
+2020.10.14 19:55:59 INFO  compiling root (2 scala sources)
+2020.10.14 19:55:59 INFO  time: compiled root in 0.18s
+2020.10.14 19:56:34 INFO  compiling root (2 scala sources)
+2020.10.14 19:56:34 INFO  time: compiled root in 0.18s
+2020.10.14 19:57:03 INFO  compiling root (2 scala sources)
+2020.10.14 19:57:03 INFO  time: compiled root in 68ms
+2020.10.14 19:57:07 INFO  compiling root (2 scala sources)
+2020.10.14 19:57:07 INFO  time: compiled root in 68ms
+2020.10.14 19:57:11 INFO  compiling root (2 scala sources)
+2020.10.14 19:57:11 INFO  time: compiled root in 0.17s
+2020.10.14 19:58:08 INFO  compiling root (2 scala sources)
+2020.10.14 19:58:08 INFO  time: compiled root in 0.17s
+2020.10.14 19:58:27 INFO  compiling root (2 scala sources)
+2020.10.14 19:58:27 INFO  time: compiled root in 0.18s
+2020.10.14 19:59:53 INFO  compiling root (2 scala sources)
+2020.10.14 19:59:53 INFO  time: compiled root in 0.19s
+2020.10.14 19:59:53 INFO  compiling root (2 scala sources)
+2020.10.14 19:59:54 INFO  time: compiled root in 0.14s
+2020.10.14 19:59:54 INFO  compiling root (2 scala sources)
+2020.10.14 19:59:54 INFO  time: compiled root in 0.15s
+2020.10.14 20:00:13 INFO  compiling root (2 scala sources)
+2020.10.14 20:00:13 INFO  time: compiled root in 0.18s
+2020.10.14 20:00:14 INFO  compiling root (2 scala sources)
+2020.10.14 20:00:14 INFO  time: compiled root in 0.15s
+2020.10.14 20:00:36 INFO  compiling root (2 scala sources)
+2020.10.14 20:00:36 INFO  time: compiled root in 0.18s
+2020.10.14 20:00:53 INFO  compiling root (2 scala sources)
+2020.10.14 20:00:53 INFO  time: compiled root in 0.19s
+2020.10.14 20:01:50 INFO  compiling root (2 scala sources)
+2020.10.14 20:01:50 INFO  time: compiled root in 0.2s
+2020.10.14 20:01:51 INFO  compiling root (2 scala sources)
+2020.10.14 20:01:51 INFO  time: compiled root in 0.2s
+2020.10.14 20:02:33 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:33 INFO  time: compiled root in 0.18s
+2020.10.14 20:02:39 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:39 INFO  time: compiled root in 0.18s
+2020.10.14 20:02:40 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:40 INFO  time: compiled root in 0.13s
+2020.10.14 20:02:40 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:40 INFO  time: compiled root in 0.36s
+2020.10.14 20:02:55 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:55 INFO  time: compiled root in 0.19s
+2020.10.14 20:02:55 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:55 INFO  time: compiled root in 0.14s
+2020.10.14 20:02:57 INFO  compiling root (2 scala sources)
+2020.10.14 20:02:57 INFO  time: compiled root in 0.15s
+2020.10.14 20:03:22 INFO  compiling root (2 scala sources)
+2020.10.14 20:03:22 INFO  time: compiled root in 0.18s
+2020.10.14 20:03:37 INFO  compiling root (2 scala sources)
+2020.10.14 20:03:37 INFO  time: compiled root in 0.18s
+2020.10.14 20:03:58 INFO  compiling root (2 scala sources)
+2020.10.14 20:03:58 INFO  time: compiled root in 0.19s
+2020.10.14 20:04:24 INFO  compiling root (2 scala sources)
+2020.10.14 20:04:25 INFO  time: compiled root in 1.23s
+2020.10.14 20:11:00 INFO  compiling root (1 scala source)
+2020.10.14 20:11:00 INFO  time: compiled root in 0.23s
+2020.10.14 20:13:30 INFO  compiling root (1 scala source)
+2020.10.14 20:13:30 INFO  time: compiled root in 0.15s
+2020.10.14 20:13:40 INFO  compiling root (1 scala source)
+2020.10.14 20:13:40 INFO  time: compiled root in 0.13s
+2020.10.14 20:15:09 INFO  compiling root (1 scala source)
+2020.10.14 20:15:09 INFO  time: compiled root in 64ms
+2020.10.14 20:16:16 INFO  compiling root (1 scala source)
+2020.10.14 20:16:16 INFO  time: compiled root in 72ms
+2020.10.14 20:16:43 INFO  compiling root (1 scala source)
+2020.10.14 20:16:43 INFO  time: compiled root in 58ms
+2020.10.14 20:16:56 INFO  compiling root (1 scala source)
+2020.10.14 20:16:56 INFO  time: compiled root in 74ms
+2020.10.14 20:17:15 INFO  compiling root (1 scala source)
+2020.10.14 20:17:15 INFO  time: compiled root in 0.14s
+2020.10.14 20:18:04 INFO  compiling root (1 scala source)
+2020.10.14 20:18:04 INFO  time: compiled root in 65ms
+2020.10.14 20:18:15 INFO  compiling root (1 scala source)
+2020.10.14 20:18:15 INFO  time: compiled root in 0.14s
+2020.10.14 20:18:40 INFO  compiling root (1 scala source)
+2020.10.14 20:18:40 INFO  time: compiled root in 0.13s
+2020.10.14 20:18:51 INFO  compiling root (1 scala source)
+2020.10.14 20:18:51 INFO  time: compiled root in 0.13s
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:15 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:14 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:69: stale bloop error: value id is not a member of scala.concurrent.Future[controllers.TrafficLight]
+did you mean zip?
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                                                    ^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:47: stale bloop error: polymorphic expression cannot be instantiated to expected type;
+ found   : [B]play.api.libs.json.Reads[B]
+ required: scala.concurrent.CanAwait
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:56:13: stale bloop error: overloaded method apply with alternatives:
+  (underlying: scala.collection.Map[String,play.api.libs.json.JsValue])play.api.libs.json.JsObject <and>
+  (fields: scala.collection.Seq[(String, play.api.libs.json.JsValue)])play.api.libs.json.JsObject
+ cannot be applied to (Seq[(String, Object)])
+            JsObject(traffic)
+            ^^^^^^^^
+2020.10.14 20:21:16 INFO  /Users/tammy/OneDrive - Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala:51:36: stale bloop error: postfix operator millis needs to be enabled
+by making the implicit value scala.language.postfixOps visible.
+----
+This can be achieved by adding the import clause 'import scala.language.postfixOps'
+or by setting the compiler option -language:postfixOps.
+See the Scaladoc for value scala.language.postfixOps for a discussion
+why the feature needs to be explicitly enabled.
+                "id" ->   o.result(-1 millis)(map(value => JsNumber(value.id))),
+                                   ^^^^^^^^^
+2020.10.14 20:21:19 INFO  compiling root (1 scala source)
+2020.10.14 20:21:19 INFO  time: compiled root in 0.14s
+Oct 14, 2020 8:21:46 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 14, 2020 8:21:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Oct 14, 2020 8:21:57 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 14, 2020 8:21:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.10.14 20:22:13 INFO  compiling root (1 scala source)
+2020.10.14 20:22:13 INFO  time: compiled root in 0.15s
+2020.10.14 20:24:22 INFO  compiling root (1 scala source)
+2020.10.14 20:24:22 INFO  time: compiled root in 61ms
+2020.10.14 20:24:31 INFO  compiling root (1 scala source)
+2020.10.14 20:24:31 INFO  time: compiled root in 56ms
+2020.10.14 20:24:39 INFO  compiling root (1 scala source)
+2020.10.14 20:24:39 INFO  time: compiled root in 65ms
+2020.10.14 20:24:39 INFO  compiling root (1 scala source)
+2020.10.14 20:24:39 INFO  time: compiled root in 24ms
+2020.10.14 20:24:43 INFO  compiling root (1 scala source)
+2020.10.14 20:24:43 INFO  time: compiled root in 78ms
+2020.10.14 22:25:00 INFO  compiling root (1 scala source)
+2020.10.14 22:25:00 INFO  time: compiled root in 0.19s
+2020.10.14 22:25:04 INFO  compiling root (1 scala source)
+2020.10.14 22:25:04 INFO  time: compiled root in 0.2s
+2020.10.14 22:25:16 INFO  compiling root (1 scala source)
+2020.10.14 22:25:16 INFO  time: compiled root in 0.15s
+2020.10.14 22:25:27 INFO  compiling root (1 scala source)
+2020.10.14 22:25:27 INFO  time: compiled root in 0.13s
+2020.10.14 22:25:40 INFO  compiling root (1 scala source)
+2020.10.14 22:25:40 INFO  time: compiled root in 0.14s
+2020.10.14 22:26:00 INFO  compiling root (1 scala source)
+2020.10.14 22:26:00 INFO  time: compiled root in 0.15s
+2020.10.14 22:26:38 INFO  compiling root (1 scala source)
+2020.10.14 22:26:38 INFO  time: compiled root in 0.17s
+2020.10.14 22:26:46 INFO  compiling root (1 scala source)
+2020.10.14 22:26:46 INFO  time: compiled root in 0.15s
+2020.10.14 22:26:48 INFO  compiling root (1 scala source)
+2020.10.14 22:26:48 INFO  time: compiled root in 0.13s
+2020.10.14 22:28:23 INFO  compiling root (1 scala source)
+2020.10.14 22:28:23 INFO  time: compiled root in 0.14s
+2020.10.14 22:28:51 INFO  compiling root (1 scala source)
+2020.10.14 22:28:51 INFO  time: compiled root in 0.18s
+2020.10.14 22:30:14 INFO  compiling root (2 scala sources)
+2020.10.14 22:30:14 INFO  time: compiled root in 0.21s
+2020.10.14 22:30:39 INFO  compiling root (2 scala sources)
+2020.10.14 22:30:39 INFO  time: compiled root in 0.2s
+something's wrong: no file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala in scala.concurrent.Future[controllers.TrafficLight]RangePosition(file:///Users/tammy/OneDrive%20-%20Ordina/hello-world-play-copy/app/controllers/TrafficLight.scala, 1776, 1776, 1796)
+Oct 14, 2020 10:57:40 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Oct 14, 2020 10:57:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1979)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1974)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2034)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1934)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5883)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6051)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3397)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5582)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5885)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5973)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1345)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1338)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:669)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:818)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1230)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.10.14 22:59:01 INFO  compiling root (2 scala sources)
+2020.10.14 22:59:01 INFO  time: compiled root in 0.47s
+2020.10.14 22:59:49 INFO  compiling root (2 scala sources)
+2020.10.14 22:59:49 INFO  time: compiled root in 0.23s
+2020.10.14 23:04:04 INFO  compiling root (2 scala sources)
+2020.10.14 23:04:04 INFO  time: compiled root in 0.25s
+2020.10.14 23:04:32 INFO  compiling root (2 scala sources)
+2020.10.14 23:04:32 INFO  time: compiled root in 0.94s
+2020.10.14 23:06:18 INFO  compiling root (2 scala sources)
+2020.10.14 23:06:18 INFO  time: compiled root in 0.28s
+2020.10.14 23:08:39 INFO  compiling root (2 scala sources)
+2020.10.14 23:08:39 INFO  time: compiled root in 0.22s
+2020.10.14 23:09:02 INFO  compiling root (2 scala sources)
+2020.10.14 23:09:02 INFO  time: compiled root in 0.2s
+2020.10.14 23:16:54 INFO  compiling root (2 scala sources)
+2020.10.14 23:16:54 INFO  time: compiled root in 0.2s
+2020.10.14 23:16:57 INFO  compiling root (2 scala sources)
+2020.10.14 23:16:57 INFO  time: compiled root in 0.18s
+2020.10.14 23:17:03 INFO  compiling root (2 scala sources)
+2020.10.14 23:17:03 INFO  time: compiled root in 0.18s
+2020.10.14 23:17:51 INFO  compiling root (2 scala sources)
+2020.10.14 23:17:51 INFO  time: compiled root in 0.2s
+2020.10.14 23:18:01 INFO  compiling root (2 scala sources)
+2020.10.14 23:18:01 INFO  time: compiled root in 0.19s
+2020.10.14 23:18:05 INFO  compiling root (2 scala sources)
+2020.10.14 23:18:05 INFO  time: compiled root in 0.2s
+2020.10.14 23:18:16 INFO  compiling root (2 scala sources)
+2020.10.14 23:18:16 INFO  time: compiled root in 0.2s
+2020.10.14 23:19:33 INFO  compiling root (2 scala sources)
+2020.10.14 23:19:33 INFO  time: compiled root in 0.21s
+2020.10.14 23:19:52 INFO  compiling root (2 scala sources)
+2020.10.14 23:19:52 INFO  time: compiled root in 0.2s
+2020.10.14 23:20:12 INFO  compiling root (2 scala sources)
+2020.10.14 23:20:12 INFO  time: compiled root in 0.2s
+2020.10.14 23:20:14 INFO  compiling root (2 scala sources)
+2020.10.14 23:20:14 INFO  time: compiled root in 0.21s
+2020.10.14 23:20:21 INFO  compiling root (2 scala sources)
+2020.10.14 23:20:22 INFO  time: compiled root in 1.12s
+2020.10.14 23:21:31 INFO  compiling root (10 scala sources and 2 java sources)
+2020.10.14 23:21:31 INFO  time: compiled root in 0.29s
+2020.10.14 23:21:31 INFO  compiling root (10 scala sources and 2 java sources)
+2020.10.14 23:21:31 INFO  time: compiled root in 0.61s
+2020.10.14 23:21:39 INFO  compiling root (10 scala sources and 2 java sources)
+2020.10.14 23:21:39 INFO  time: compiled root in 0.3s
+2020.10.14 23:21:48 INFO  compiling root (10 scala sources and 2 java sources)
+2020.10.14 23:21:48 INFO  time: compiled root in 0.28s
+2020.10.14 23:22:06 INFO  compiling root (8 scala sources and 1 java source)
+2020.10.14 23:22:08 INFO  time: compiled root in 1.98s
+2020.10.14 23:24:30 INFO  compiling root (1 scala source)
+2020.10.14 23:24:30 INFO  time: compiled root in 0.17s
+2020.10.14 23:24:30 INFO  compiling root (1 scala source)
+2020.10.14 23:24:30 INFO  time: compiled root in 0.21s
+2020.10.14 23:24:30 INFO  compiling root (1 scala source)
+2020.10.14 23:24:30 INFO  time: compiled root in 0.16s
+2020.10.14 23:24:42 INFO  compiling root (1 scala source)
+2020.10.14 23:24:42 INFO  time: compiled root in 0.18s
+Exception in thread "pool-18-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Oct 15, 2020 2:56:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21089
+Oct 15, 2020 7:19:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22201
+2020.10.15 19:22:20 INFO  time: evaluated worksheet 'ws.worksheet.sc' in 0.99s

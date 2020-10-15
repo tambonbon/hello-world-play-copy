@@ -83,9 +83,10 @@ class HomeController @Inject()(val ws: WSClient,
               
           }
         }
-        else save(Map(light.id -> light)) // create a new light
-        Ok(Json.toJson(toTrafficLight(list)))
-        
+        else {
+          save(Map(light.id -> light)) // create a new light
+          Ok(Json.toJson(toTrafficLight(list)))
+        }
       }
       
     )
@@ -108,18 +109,61 @@ class HomeController @Inject()(val ws: WSClient,
         Future.successful(BadRequest(Json.obj("message" -> JsError.toJson(errors))))
       },
       light => {
-        
-        // (Ok(Json.toJson(toRed(light))))
+        if (list.keySet.contains(light.id)) {
+          Future {
+            if (light.color == "Red") {
+              if (list(light.id).color == "Orange" && list(light.id).color == "Red") {
+                save(Map(light.id -> light))
+                Ok(Json.toJson(toTrafficLight(list)))
+              } 
+              else  {
+                val temp: TrafficLight = TrafficLight(light.id, "Orange")
+                save(Map(light.id -> temp))
+                futures.delayed(10000 millis) { // This is non-blocking 
+                Ok(Json.toJson(toTrafficLight(list)))
+                  Future.successful(save(Map(light.id -> light))) 
+                }
+                Ok(Json.toJson(toTrafficLight(list)))
+
+              }
+            }
+            else if (light.color == "Orange") {
+            if (list(light.id).color == "Green") { 
+              save(Map(light.id -> light))
+              Ok(Json.toJson(toTrafficLight(list)))
+            }
+            else BadRequest(Json.obj("message" -> "Request forbidden"))
+          }
+          else {
+            if (list(light.id).color == "Red") {
+              save(Map(light.id -> light))
+              Ok(Json.toJson(toTrafficLight(list)))
+            }
+            else BadRequest(Json.obj("message" -> "Request forbidden"))
+              
+          }
+          }
+        }
+
+        else {
+          Future {
+            save(Map(light.id -> light)) // create a new light
+            Ok(Json.toJson(toTrafficLight(list)))
+          }
+        }
       }
     )
   }
-  
-  // Future {
-  //   if (from.color == "Orange") TrafficLight(from.id, "Red") 
-  //   else {
-
-  //   }
-  // }
+  def showColor(someColor: String) = Action { request =>
+    if (someColor == null) BadRequest("Wrong Color")
+    TrafficLight.list
+    .find(_._2.color == someColor)
+    .map { tl =>
+      Ok(Json.toJson(tl._2))
+    }
+    .getOrElse(NotFound("No Color founded"))
+  }
+  // Playing with WS
   def availability = Action.async {
     val response: Future[WSResponse] = ws.url("http://localhost:9000/traffic-light1").get()
     val siteAvailable: Future[Boolean] = response.map { r => 
@@ -131,42 +175,5 @@ class HomeController @Inject()(val ws: WSClient,
     }
   }
   
-  // def updateAsync = Action.async(parse.json) { request => 
-  
-
-  //   )
-  // }
-
-  //   val json: Future[JsValue] = response.map(_.json)
-
-  //   val result: Future[]
-      
-  // }
-
-
-/*   def saveAsync = Action.async(parse.json) { request => 
-    val result = request.body.validate[TrafficLight]// request.body.validate[TrafficLight]
-    result.fold(
-      errors => {
-        BadRequest(Json.obj("message" -> JsError.toJson(errors)))
-      },
-      light => {
-        if (light.color == "Red") {
-          if (list.last._2 == "Orange") {
-            list.save(light.id, light.color)
-            Ok(Json.toJson(list))
-          }
-          else if (list.last._2 == "Green") { 
-            list.save(light.id, "Orange")
-            Future{ Thread.sleep(5*1000)}
-            list.save((light.id, light.color))
-            Ok(Json.toJson(list))
-          }
-          else BadRequest(Json.obj("message" -> "Request forbidden"))
-        }
-        
-      }
-    )
-  } */
 
 }
