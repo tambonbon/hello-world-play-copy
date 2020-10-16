@@ -10,7 +10,7 @@ var list: Set[TrafficLight] = {
     }
 
 val map1 = list.zipWithIndex.map{case(v,i) => (v, i+1)}
-// list.foldLeft(Map.empty[Int,String])()
+// trafficLightsMap.foldLeft(Map.empty[Int,String])()
 val map2 = Set(
     TrafficLight(1,"Green"),
     TrafficLight(5, "Red")
