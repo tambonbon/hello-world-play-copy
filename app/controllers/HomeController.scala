@@ -2,7 +2,7 @@ package controllers
 
 import javax.inject._
 import json.TrafficLightJson._
-import model.{ Color, TrafficLight }
+import model.{Color, TrafficLight}
 import play.api.libs.concurrent.Futures
 import play.api.libs.json._
 import play.api.libs.ws._
@@ -58,28 +58,33 @@ class HomeController @Inject() (val ws: WSClient, val controllerComponents: Cont
       },
       newTrafficLight => {
         val currentTrafficLightOpt = TrafficLight.trafficLightsMap.get(newTrafficLight.id)
+
+        def transitionIfAllowed(newTrafficLightColor: Color.Value, transition: Int => Future[TrafficLight]): Future[Result] = {
+          if (newTrafficLight.color == newTrafficLightColor) {
+            val updatedTrafficLight = transition(newTrafficLight.id)
+            updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
+          } else {
+            Future.successful(BadRequest(Json.obj("message" -> "Request forbidden")))
+          }
+        }
+
+        val transitionsAllowed: Map[Color.Color, Color.Color] = Map(
+          Color.Red -> Color.Green,
+          Color.Green -> Color.Red,
+          Color.Orange -> Color.Red
+        )
+
+        val transitions: Map[Color.Color, Int => Future[TrafficLight]] = Map(
+          Color.Red -> TrafficLight.changeToGreen,
+          Color.Green -> TrafficLight.changeToRedFromGreen,
+          Color.Orange -> TrafficLight.changeToRedFromOrange
+        )
+
         currentTrafficLightOpt match {
-          case Some(currentTrafficLight) if currentTrafficLight.color == Color.Red =>
-            if (newTrafficLight.color == Color.Green) {
-              val updatedTrafficLight = TrafficLight.changeToGreen(newTrafficLight.id)
-              updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
-            } else {
-              Future.successful(BadRequest(Json.obj("message" -> "Request forbidden")))
-            }
-          case Some(currentTrafficLight) if currentTrafficLight.color == Color.Green =>
-            if (newTrafficLight.color == Color.Red) {
-              val updatedTrafficLight = TrafficLight.changeToRedFromGreen(newTrafficLight.id)
-              updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
-            } else {
-              Future.successful(BadRequest(Json.obj("message" -> "Request forbidden")))
-            }
-          case Some(currentTrafficLight) if currentTrafficLight.color == Color.Orange =>
-            if (newTrafficLight.color == Color.Red) {
-              val updatedTrafficLight = TrafficLight.changeToRedFromOrange(newTrafficLight.id)
-              updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
-            } else {
-              Future.successful(BadRequest(Json.obj("message" -> "Request forbidden")))
-            }
+          case Some(currentTrafficLight) =>
+            val newTrafficLightColor: Color.Value = transitionsAllowed(currentTrafficLight.color)
+            val transition: Int => Future[TrafficLight] = transitions(currentTrafficLight.color)
+            transitionIfAllowed(newTrafficLightColor, transition)
           case None =>
             save(Map(newTrafficLight.id -> newTrafficLight)) // create a new light
             Future.successful(Ok(Json.toJson(newTrafficLight)))

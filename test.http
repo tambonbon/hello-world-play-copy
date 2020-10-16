@@ -8,14 +8,14 @@ GET {{host}}/traffic-light
 
 # Create traffic light:
 
-@id = 22
+@id = 1
 
 PUT {{host}}/traffic-light
 Content-Type: application/json
 
 {
   "id": {{id}},
-  "color": "Green"
+  "color": "Red"
 }
 
 ####

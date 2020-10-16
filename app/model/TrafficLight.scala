@@ -15,7 +15,7 @@ object TrafficLight {
     )
   }
 
-  var ongoingChangesToTrafficLights: Map[Int, Future[TrafficLight]] = Map.empty
+  var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
 
   def trafficLightsList: List[TrafficLight] =
     trafficLightsMap.values.toList
@@ -28,32 +28,38 @@ object TrafficLight {
     greenTrafficLight
   }
 
-  def changeToRedFromGreen(id: Int): Future[TrafficLight] = Future {
-    // Step 1. Make the light Orange
-    val orangeTrafficLight = TrafficLight(id, Color.Orange)
-    trafficLightsMap += id -> orangeTrafficLight
+  def changeToRedFromGreen(id: Int): Future[TrafficLight] = {
+    val request = Future {
+      // Step 1. Make the light Orange
+      val orangeTrafficLight = TrafficLight(id, Color.Orange)
+      trafficLightsMap += id -> orangeTrafficLight
 
-    // Step 2. Wait 15 seconds
-    Thread.sleep(15 * 1000)
+      // Step 2. Wait 15 seconds
+      Thread.sleep(15 * 1000)
 
-    // Step 3. Make the light Red
-    val redTrafficLight = TrafficLight(id, Color.Red)
-    trafficLightsMap += id -> redTrafficLight
+      // Step 3. Make the light Red
+      val redTrafficLight = TrafficLight(id, Color.Red)
+      trafficLightsMap += id -> redTrafficLight
 
-    redTrafficLight
+      // Step 4. Finish the request.
+      ongoingRequests -= id
+
+      redTrafficLight
+    }
+
+    ongoingRequests += id -> request
+
+    request
   }
 
 
-  def changeToRedFromOrange(id: Int): Future[TrafficLight] = Future {
-    // Step 1. Do nothing. It is already Orange.
-
-    // Step 2. Wait 15 seconds
-    Thread.sleep(15 * 1000)
-
-    // Step 3. Make the light Red
-    val redTrafficLight = TrafficLight(id, Color.Red)
-    trafficLightsMap += id -> redTrafficLight
-
-    redTrafficLight
+  def changeToRedFromOrange(id: Int): Future[TrafficLight] = {
+    val ongoingRequestOpt = ongoingRequests.get(id)
+    ongoingRequestOpt match {
+      case Some(ongoingRequest) =>
+        ongoingRequest
+      case None =>
+        Future.successful(TrafficLight(id, Color.Red))
+    }
   }
 }
