@@ -3,6 +3,7 @@ package model
 import model.Color.Color
 
 import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
 
 case class TrafficLight(id: Int, color: Color)
 object TrafficLight {
@@ -14,22 +15,45 @@ object TrafficLight {
     )
   }
 
+  var ongoingChangesToTrafficLights: Map[Int, Future[TrafficLight]] = Map.empty
+
   def trafficLightsList: List[TrafficLight] =
     trafficLightsMap.values.toList
 
-  def changeToGreen(id: Int): Unit = {
+  def changeToGreen(id: Int): Future[TrafficLight] = Future {
     // Step 1. Make the light Green
-    trafficLightsMap += id -> TrafficLight(id, Color.Green)
+    val greenTrafficLight = TrafficLight(id, Color.Green)
+    trafficLightsMap += id -> greenTrafficLight
+
+    greenTrafficLight
   }
 
-  def changeToRed(id: Int): Unit = {
+  def changeToRedFromGreen(id: Int): Future[TrafficLight] = Future {
     // Step 1. Make the light Orange
-    trafficLightsMap += id -> TrafficLight(id, Color.Orange)
+    val orangeTrafficLight = TrafficLight(id, Color.Orange)
+    trafficLightsMap += id -> orangeTrafficLight
 
     // Step 2. Wait 15 seconds
     Thread.sleep(15 * 1000)
 
     // Step 3. Make the light Red
-    trafficLightsMap += id -> TrafficLight(id, Color.Red)
+    val redTrafficLight = TrafficLight(id, Color.Red)
+    trafficLightsMap += id -> redTrafficLight
+
+    redTrafficLight
+  }
+
+
+  def changeToRedFromOrange(id: Int): Future[TrafficLight] = Future {
+    // Step 1. Do nothing. It is already Orange.
+
+    // Step 2. Wait 15 seconds
+    Thread.sleep(15 * 1000)
+
+    // Step 3. Make the light Red
+    val redTrafficLight = TrafficLight(id, Color.Red)
+    trafficLightsMap += id -> redTrafficLight
+
+    redTrafficLight
   }
 }
