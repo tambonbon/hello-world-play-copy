@@ -1,15 +1,15 @@
 @host = http://localhost:9000
 
 # Get ALL
-
+###
 GET {{host}}/traffic-light
 
-####
+###
 
 # Create traffic light:
 
 @id = 1
-
+###
 PUT {{host}}/traffic-light
 Content-Type: application/json
 
