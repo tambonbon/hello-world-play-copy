@@ -2,8 +2,7 @@ package controllers
 
 import javax.inject._
 import json.TrafficLightJson._
-import model.{Color, TrafficLight}
-import play.api.libs.concurrent.Futures
+import model.{ Color, TrafficLight }
 import play.api.libs.json._
 import play.api.libs.ws._
 import play.api.mvc._
@@ -11,17 +10,18 @@ import services.TrafficLightService
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import scala.concurrent.duration._
 import scala.language.postfixOps
-import services.CachingTrafficLightService
+
 /**
   * This controller creates an `Action` to handle HTTP requests to the
   * application's home page.
   */
 @Singleton
-class HomeController @Inject() (trafficLightService: TrafficLightService,
-                                ws: WSClient, val controllerComponents: ControllerComponents, val futures: Futures)
-  extends BaseController {
+class HomeController @Inject() (
+  trafficLightService: TrafficLightService,
+  ws: WSClient,
+  val controllerComponents: ControllerComponents
+) extends BaseController {
 
   /**
     * Create an Action to render an HTML page.
@@ -30,34 +30,20 @@ class HomeController @Inject() (trafficLightService: TrafficLightService,
     * will be called when the application receives a `GET` request with
     * a path of `/`.
     */
-
-  def index(): Action[AnyContent] = Action { request =>
+  def index(): Action[AnyContent] = Action {
     Ok(views.html.index())
   }
-//  def toTrafficLight(map: Map[Int, TrafficLight]): List[TrafficLight] = {
-//    map.toList.map(x => x._2)
-//  }
 
-  def all = Action { request =>
-    val json = Json.toJson((trafficLightService.all))
+  def all = Action {
+    val json = Json.toJson(trafficLightService.all)
     Ok(json)
   }
 
-  def get(someId: Int) = Action { request =>
-    trafficLightService.get(someId).fold(NotFound: Result){
-      tl => Ok(Json.toJson(tl))
-    }
-//    TrafficLight.trafficLightsMap
-//      .find(_._1 == someId)
-//      .map { tl =>
-//        Ok(Json.toJson(tl._2))
-//      }
-//      .getOrElse(NotFound("No JSON found"))
+  def get(someId: Int) = Action {
+    trafficLightService.get(someId)
+      .map(Json.toJson(_))
+      .fold[Result](NotFound)(Ok(_))
   }
-
-  def save(tl: Map[Int, TrafficLight]) = {
-    trafficLightService.save(tl)
-  } // to show lights in order
 
   def update = Action.async(parse.json) { request =>
     val result = request.body.validate[TrafficLight]
@@ -68,16 +54,14 @@ class HomeController @Inject() (trafficLightService: TrafficLightService,
       newTrafficLight => {
         val currentTrafficLightOpt = trafficLightService.get(newTrafficLight.id)
 
-        def updateLights(newTrafficLightColor: Color.Value,
-                         transition: Int => Future[TrafficLight]): Future[Result]= {
+        def updateLights(newTrafficLightColor: Color.Value, transition: Int => Future[TrafficLight]): Future[Result] = {
           if (newTrafficLight.color == newTrafficLightColor) {
             val updatedTrafficLight = transition(newTrafficLight.id) //trafficLightService.getFuture(newTrafficLight.id) // will return a future of TL
             updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
             //val test1 = test.map(Ok(_))
 //            test1
             //  map(Ok(_)) // for returning from future to json
-          }
-          else {
+          } else {
             Future.successful(BadRequest(Json.obj("message" -> "Request forbidden")))
           }
         }
@@ -88,7 +72,7 @@ class HomeController @Inject() (trafficLightService: TrafficLightService,
           Color.Orange -> Color.Red
         )
         val transitions: Map[Color.Color, Int => Future[TrafficLight]] = Map(
-          Color.Red -> trafficLightService.changeToGreen,
+          Color.Red -> trafficLightService.changeToGreenFromRed,
           Color.Green -> trafficLightService.changeToRedFromGreen,
           Color.Orange -> trafficLightService.changeToRedFromOrange
         )
@@ -101,7 +85,7 @@ class HomeController @Inject() (trafficLightService: TrafficLightService,
             test
           }
           case None => {
-            save(Map(newTrafficLight.id -> newTrafficLight)) // create a new light
+            trafficLightService.save(newTrafficLight) // create a new light
             Future.successful(Ok(Json.toJson(newTrafficLight)))
           }
         }
