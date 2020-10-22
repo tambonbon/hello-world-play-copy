@@ -17,6 +17,7 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % Test
 libraryDependencies += "net.codingwell" %% "scala-guice" % "4.2.11"
 libraryDependencies += jdbc
 libraryDependencies += "com.typesafe.slick" %% "slick" % "3.3.3"
+libraryDependencies += "com.typesafe" % "config" % "1.4.0"
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "com.example.controllers._"
 

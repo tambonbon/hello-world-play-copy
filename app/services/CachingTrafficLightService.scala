@@ -1,6 +1,6 @@
 package services
 import javax.inject.Inject
-import model.TrafficLight.ongoingRequests
+import model.TrafficLight._
 import model.{Color, TrafficLight}
 import play.api.cache.AsyncCacheApi
 import play.api.libs.json._
@@ -43,6 +43,7 @@ class CachingTrafficLightService @Inject() extends TrafficLightService {
   def trafficLightsList: List[TrafficLight] =
     db.values.toList
 
+  var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
   override def changeToGreen(id: Int): Future[TrafficLight] = Future {
     // Step 1. Make the light Green
     val greenTrafficLight = TrafficLight(id, Color.Green)

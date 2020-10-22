@@ -1,5 +1,5 @@
 package controllers
-
+import play.api.Configuration
 import javax.inject._
 import json.TrafficLightJson._
 import model.{Color, TrafficLight}
@@ -20,9 +20,9 @@ import services.CachingTrafficLightService
   */
 @Singleton
 class HomeController @Inject() (trafficLightService: TrafficLightService,
+                               configuration: Configuration,
                                 ws: WSClient, val controllerComponents: ControllerComponents, val futures: Futures)
   extends BaseController {
-
   /**
     * Create an Action to render an HTML page.
     *
@@ -73,9 +73,7 @@ class HomeController @Inject() (trafficLightService: TrafficLightService,
           if (newTrafficLight.color == newTrafficLightColor) {
             val updatedTrafficLight = transition(newTrafficLight.id) //trafficLightService.getFuture(newTrafficLight.id) // will return a future of TL
             updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
-            //val test1 = test.map(Ok(_))
-//            test1
-            //  map(Ok(_)) // for returning from future to json
+             // for returning from future to json
           }
           else {
             Future.successful(BadRequest(Json.obj("message" -> "Request forbidden")))

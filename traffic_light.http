@@ -5,15 +5,15 @@
 GET http://localhost:9000/traffic-light/
 ###
 
-GET http://localhost:9000/traffic-light/3
+GET http://localhost:9000/traffic-light/2
 
 ###
 PUT http://localhost:9000/traffic-light 
 content-type: application/json
 
 {
-    "id" : 4,
-    "color" : "Orange"
+    "id" : 1,
+    "color" : "Red"
 }
 
 ###
