@@ -1,10 +1,12 @@
 package services
-import model.{ Color, TrafficLight }
+import javax.inject.Singleton
+import model.{Color, TrafficLight}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.language.postfixOps
 
+@Singleton
 class InMemoryTrafficLightService() extends TrafficLightService {
 
   private var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
