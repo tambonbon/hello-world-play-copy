@@ -1,19 +1,17 @@
 package services
-import javax.inject.Inject
-import model.TrafficLight._
+import javax.inject.Singleton
 import model.{Color, TrafficLight}
-import play.api.cache.AsyncCacheApi
-import play.api.libs.json._
-import play.api.libs.ws._
-import play.api.mvc._
-import play.api.cache._
-import scala.language.postfixOps
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
-class CachingTrafficLightService @Inject() extends TrafficLightService {
-   var db = Map (
+@Singleton
+class InMemoryTrafficLightService() extends TrafficLightService {
+
+  private var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
+
+  private var db = Map(
     1 -> TrafficLight(1, Color.Green),
     2 -> TrafficLight(2, Color.Orange),
     3 -> TrafficLight(3, Color.Red)
@@ -27,24 +25,18 @@ class CachingTrafficLightService @Inject() extends TrafficLightService {
     db.get(id)
   }
 
-  override def getFuture(id: Int): Future[TrafficLight] = Future {
-    db(id)
+  override def getFuture(id: Int): Future[Option[TrafficLight]] = Future {
+    db.get(id)
   }
-  override def save(tl: Map[Int, TrafficLight]): Unit = {
-    db ++= tl
+
+  override def save(tl: TrafficLight): Unit = {
+    db += (tl.id -> tl)
   }
-//  override def saveFuture(tl: Map[Int, Future[TrafficLight]]): Future[Result] = Future {
-//    db ++= tl
-//  }
-//  override def update: JsValue = {
-//
-//  }
 
   def trafficLightsList: List[TrafficLight] =
     db.values.toList
 
-  var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
-  override def changeToGreen(id: Int): Future[TrafficLight] = Future {
+  override def changeToGreenFromRed(id: Int): Future[TrafficLight] = Future {
     // Step 1. Make the light Green
     val greenTrafficLight = TrafficLight(id, Color.Green)
     db += id -> greenTrafficLight
@@ -75,7 +67,6 @@ class CachingTrafficLightService @Inject() extends TrafficLightService {
 
     request
   }
-
 
   override def changeToRedFromOrange(id: Int): Future[TrafficLight] = {
     val ongoingRequestOpt = ongoingRequests.get(id)

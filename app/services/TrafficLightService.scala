@@ -6,13 +6,13 @@ import play.api.mvc.Result
 
 import scala.concurrent.Future
 
-@ImplementedBy(classOf[CachingTrafficLightService])
+@ImplementedBy(classOf[InMemoryTrafficLightService])
 trait TrafficLightService {
   def all: Seq[TrafficLight]
   def get(id: Int): Option[TrafficLight]
-  def getFuture(id: Int): Future[TrafficLight]
-  def save(tl: Map[Int, TrafficLight]): Unit
-  def changeToGreen(id: Int): Future[TrafficLight]
+  def getFuture(id: Int): Future[Option[TrafficLight]]
+  def save(tl: TrafficLight): Unit
+  def changeToGreenFromRed(id: Int): Future[TrafficLight]
   def changeToRedFromGreen(id: Int): Future[TrafficLight]
   def changeToRedFromOrange(id: Int): Future[TrafficLight]
 
