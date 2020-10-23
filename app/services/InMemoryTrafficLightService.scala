@@ -1,13 +1,17 @@
 package services
-import javax.inject.Singleton
+import java.io.File
+
+import javax.inject.{Inject, Singleton}
 import model.{Color, TrafficLight}
+import play.api.libs._
+import play.api.mvc._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.language.postfixOps
-
+import com.typesafe.config.{Config}
 @Singleton
-class InMemoryTrafficLightService() extends TrafficLightService {
+class InMemoryTrafficLightService @Inject() (config: Config) extends TrafficLightService {
 
   private var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
 
@@ -44,6 +48,8 @@ class InMemoryTrafficLightService() extends TrafficLightService {
     greenTrafficLight
   }
 
+  System.setProperty("traffic-light.duration", "This value comes from a system property")
+
   override def changeToRedFromGreen(id: Int): Future[TrafficLight] = {
     val request = Future {
       // Step 1. Make the light Orange
@@ -51,7 +57,7 @@ class InMemoryTrafficLightService() extends TrafficLightService {
       db += id -> orangeTrafficLight
 
       // Step 2. Wait 15 seconds
-      Thread.sleep(15 * 1000)
+      Thread.sleep(config.getInt("traffic-light.duration"))
 
       // Step 3. Make the light Red
       val redTrafficLight = TrafficLight(id, Color.Red)
