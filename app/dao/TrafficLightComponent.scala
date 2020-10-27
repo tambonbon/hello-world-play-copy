@@ -4,6 +4,8 @@ import model.{Color, TrafficLight}
 import play.api.db.slick.HasDatabaseConfigProvider
 import slick.jdbc.JdbcProfile
 /** A component that creates Table having Enum as columns
+  * In our case, lights is a column of type Color
+  * https://github.com/lloydmeta/enumeratum/#slick-integration
   * */
 trait TrafficLightComponent extends SlickEnumSupport { self: HasDatabaseConfigProvider[JdbcProfile] =>
   val profile: slick.jdbc.JdbcProfile

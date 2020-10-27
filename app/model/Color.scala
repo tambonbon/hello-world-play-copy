@@ -1,6 +1,8 @@
 package model
-//import play.api.libs.json.{Reads, Writes}
+
 import enumeratum._
+
+// https://index.scala-lang.org/lloydmeta/enumeratum/enumeratum-circe/1.6.1?target=_2.13
 sealed trait Color extends EnumEntry
 object Color extends Enum[Color] {
 
