@@ -4,13 +4,14 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET    /                                  controllers.HomeController.index()
+#GET    /                                  controllers.HomeController.index()
 GET    /traffic-light/                    controllers.HomeController.all
 GET    /traffic-light                     controllers.HomeController.all
 GET    /traffic-light/:someId             controllers.HomeController.get(someId: Int)
 PUT    /traffic-light                     controllers.HomeController.update
 #PUT    /traffic-light-async               controllers.HomeController.updateAsync
 GET    /avail                             controllers.HomeController.availability
+GET    /traffic-light-rest                controllers.HomeController.all1
 #GET    /traffic-light                     controllers.HomeController.showColor(color?="")
 
 # Map static resources from the /public folder to the /assets URL path

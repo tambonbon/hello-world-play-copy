@@ -1,3 +1,61 @@
+slick.dbs.default.driver="slick.driver.H2Driver$"
+slick.dbs.default.db.driver="org.h2.Driver"
+slick.dbs.default.db.url="jdbc:h2:~/test;MODE=MYSQL"
+slick.dbs.default.db.user=sa
+slick.dbs.default.db.password=""
+
+play.db {
+  # The combination of these two settings results in "db.default" as the
+  # default JDBC pool:
+   config = "db"
+   default = "default"
+
+  # Play uses HikariCP as the default connection pool.  You can override
+  # settings by changing the prototype:
+  prototype {
+    # Sets a fixed JDBC connection pool size of 50
+    #hikaricp.minimumIdle = 50
+    #hikaricp.maximumPoolSize = 50
+  }
+}
+
+## JDBC Datasource
+# https://www.playframework.com/documentation/latest/JavaDatabase
+# https://www.playframework.com/documentation/latest/ScalaDatabase
+# ~~~~~
+# Once JDBC datasource is set up, you can work with several different
+# database options:
+#
+# Slick (Scala preferred option): https://www.playframework.com/documentation/latest/PlaySlick
+# JPA (Java preferred option): https://playframework.com/documentation/latest/JavaJPA
+# EBean: https://playframework.com/documentation/latest/JavaEbean
+# Anorm: https://www.playframework.com/documentation/latest/ScalaAnorm
+#
+db {
+    # Default database configuration using MySQL database engine
+    # Connect to playdb as playdbuser
+
+  # You can declare as many datasources as you want.
+  # By convention, the default datasource is named `default`
+
+# Default database configuration using MySQL database engine
+# Connect to playdb as playdbuser
+db.default.driver=com.mysql.jdbc.Driver
+db.default.url="jdbc:mysql://localhost:3306"
+db.default.username=root
+db.default.password="root123"
+
+  # https://www.playframework.com/documentation/latest/Developing-with-the-H2-Database
+  #default.driver = org.h2.Driver
+  #default.url = "jdbc:h2:mem:play"
+  #default.username = sa
+  #default.password = ""
+
+  # You can turn on SQL logging for any datasource
+  # https://www.playframework.com/documentation/latest/Highlights25#Logging-SQL-statements
+  #default.logSql=true
+
+}
  curl --header "Content-type: application/json" --request PUT --data '{"id": 4, "color": "Orange"}' http://localhost:9000/traffic-light
  
 if (list(light.id).color == "Orange" && list(light.id).color == "Red") {

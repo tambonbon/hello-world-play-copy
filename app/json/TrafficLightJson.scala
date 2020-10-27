@@ -1,7 +1,6 @@
 package json
 
-import model.Color.Color
-import model.{ Color, TrafficLight }
+import model.{Color, TrafficLight}
 import play.api.libs.json._
 
 object TrafficLightJson {

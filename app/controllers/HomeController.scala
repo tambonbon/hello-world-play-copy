@@ -1,8 +1,9 @@
 package controllers
 
+import dao.TrafficLightDAO
 import javax.inject._
 import json.TrafficLightJson._
-import model.{ Color, TrafficLight }
+import model.{Color, TrafficLight}
 import play.api.libs.json._
 import play.api.libs.ws._
 import play.api.mvc._
@@ -18,10 +19,10 @@ import scala.language.postfixOps
   */
 class HomeController @Inject() (
   trafficLightService: TrafficLightService,
+  trafficLightDAO: TrafficLightDAO,
   ws: WSClient,
-  val controllerComponents: ControllerComponents
-) extends BaseController {
-
+  controllerComponents: ControllerComponents) extends AbstractController(controllerComponents) {
+//  import dbConfig.profile.api._
   /**
     * Create an Action to render an HTML page.
     *
@@ -36,6 +37,9 @@ class HomeController @Inject() (
   def all = Action {
     val json = Json.toJson(trafficLightService.all)
     Ok(json)
+  }
+  def all1 = Action.async { request =>
+    trafficLightDAO.all().map { tl => Ok(Json.toJson(tl))}
   }
 
   def get(someId: Int) = Action {
@@ -53,7 +57,7 @@ class HomeController @Inject() (
       newTrafficLight => {
         val currentTrafficLightOpt = trafficLightService.get(newTrafficLight.id)
 
-        def updateLights(newTrafficLightColor: Color.Value, transition: Int => Future[TrafficLight]): Future[Result] = {
+        def updateLights(newTrafficLightColor: Color , transition: Int => Future[TrafficLight]): Future[Result] = {
           if (newTrafficLight.color == newTrafficLightColor) {
             val updatedTrafficLight = transition(newTrafficLight.id) //trafficLightService.getFuture(newTrafficLight.id) // will return a future of TL
             updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
@@ -65,12 +69,12 @@ class HomeController @Inject() (
           }
         }
 
-        val transitionsColorOnly: Map[Color.Color, Color.Color] = Map(
+        val transitionsColorOnly: Map[Color , Color ] = Map(
           Color.Red -> Color.Green,
           Color.Green -> Color.Red,
           Color.Orange -> Color.Red
         )
-        val transitions: Map[Color.Color, Int => Future[TrafficLight]] = Map(
+        val transitions: Map[Color , Int => Future[TrafficLight]] = Map(
           Color.Red -> trafficLightService.changeToGreenFromRed,
           Color.Green -> trafficLightService.changeToRedFromGreen,
           Color.Orange -> trafficLightService.changeToRedFromOrange
@@ -78,7 +82,7 @@ class HomeController @Inject() (
         currentTrafficLightOpt match {
 
           case Some(currentTrafficLight) => {
-            val newTL: Color.Value = transitionsColorOnly(currentTrafficLight.color)
+            val newTL: Color = transitionsColorOnly(currentTrafficLight.color)
             val transition: Int => Future[TrafficLight] = transitions(currentTrafficLight.color)
             val test = updateLights(newTL, transition)
             test
