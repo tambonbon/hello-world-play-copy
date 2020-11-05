@@ -1,8 +1,9 @@
-@host = http://localhost:9000
+###
+@host = localhost:9001
 
 # Get ALL
-
-GET {{host}}/traffic-light/
+###
+GET {{host}}/traffic-light
 
 ####
 
