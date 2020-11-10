@@ -9,6 +9,7 @@ scalaVersion := "2.13.1"
 
 libraryDependencies ++= Seq(
   guice,
+  "com.typesafe.slick" %% "slick" % "3.3.2",
   "com.typesafe.play" %% "play-slick" % "5.0.0",
   "com.typesafe.play" %% "play-slick-evolutions" % "5.0.0",
   "com.h2database" % "h2" % "1.4.199",

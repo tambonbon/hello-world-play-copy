@@ -27,7 +27,7 @@ class HomeControllerSpec extends PlaySpec with GuiceOneAppPerTest with Injecting
       val mockCC = mock[ControllerComponents]
       val trafficLightDAO = inject[TrafficLightDAO]
       // i try to use mock or inject here, but no success
-      val controller = new HomeController((  stubControllerComponents()))
+      val controller = new HomeController(mockTLService, mockTLDAO, mockWS, stubControllerComponents())
       val home = controller.index().apply(FakeRequest(GET, "/"))
 
       status(home) mustBe OK
