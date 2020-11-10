@@ -14,20 +14,26 @@ class TrafficLightDAO @Inject() (config: Config,
                                  dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
   // extends HasDatabaseConfigProvider[JdbcProfile]{
   val dbConfig = dbConfigProvider.get[JdbcProfile]
+
   import dbConfig._
   import profile.api._
-  implicit lazy val myColorMapper = MappedColumnType.base[Color, String] (
+
+  implicit lazy val myColorMapper = MappedColumnType.base[Color, String](
     e => e.toString,
     s =>
       Try(Color.withName(s)).getOrElse(
         throw new IllegalArgumentException(s"enumeration $s doesn't exist $Color[${Color.values.mkString(",")}]")
       )
   )
-    class TrafficLightsTable(tag: Tag) extends Table[TrafficLight](tag, "TrafficLights") {
-      def id = column[Int]("id", O.PrimaryKey)
-      def lights = column[Color]("color")
-      def * = (id, lights) <> ((TrafficLight.apply _).tupled, TrafficLight.unapply)
-    }
+
+  class TrafficLightsTable(tag: Tag) extends Table[TrafficLight](tag, "TrafficLights") {
+    def id = column[Int]("id", O.PrimaryKey)
+
+    def lights = column[Color]("color")
+
+    def * = (id, lights) <> ((TrafficLight.apply _).tupled, TrafficLight.unapply)
+  }
+
   val trafficLights = TableQuery[TrafficLightsTable] // This is the actual query
 
   /*
@@ -35,25 +41,42 @@ class TrafficLightDAO @Inject() (config: Config,
   * */
   val setup = DBIO.seq(
     // Create the table
-    trafficLights.schema.create,
+        trafficLights.schema.create,
     // Insert some lights
     trafficLights ++= Seq(
-      TrafficLight(1, Color.Green ),
-      TrafficLight(2,  Color.Green),
-      TrafficLight(3,  Color.Red)
+      TrafficLight(1, Color.Green),
+      TrafficLight(2, Color.Green),
+      TrafficLight(3, Color.Red)
     )
   )
   val setupFuture = dbConfig.db.run(setup)
 
-  /** Insert new lights*/
-  def save(light: TrafficLight): Future[Unit] =
-    dbConfig.db.run(trafficLights += light).map(_=> ())
+  /** Insert new lights */
+  def save(light: TrafficLight): Future[Unit] = { //update
+
+    dbConfig.db.run(trafficLights += light).map(_ => ())
+  }
+//  def changeToGreenFromRed(id: Int): Future[TrafficLight] = Future {
+//    // Step 1. Make the light Green
+//    val greenTrafficLight = TrafficLight(id, Color.Green)
+//
+//    val q = for { c <- trafficLights if c.id === id } yield c.lights
+//    val updateAction = q.update(Color.Red)
+//    // Get the statement without having to specify an updated value:
+//    //    val sql = q.updateStatement
+//    dbConfig.db.run(updateAction) // this is a side-effect
+//  // use that returning value to return instead of greenTL
+//    greenTrafficLight
+//  }
   /** Show all lights*/
   def all(): Future[Seq[TrafficLight]] = {
     dbConfig.db.run(trafficLights.result)
   }
   def get(id: Int): Future[Option[TrafficLight]] = {
     dbConfig.db.run(trafficLights.filter(tl => tl.id === id).result.headOption)
+  }
+  def delete(id: Int): Future[Int] = {
+    dbConfig.db.run(trafficLights.filter(tl => tl.id === id).delete)
   }
   private var ongoingRequests: Map[Int, Future[TrafficLight]] = Map.empty
 

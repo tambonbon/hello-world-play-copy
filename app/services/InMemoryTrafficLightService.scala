@@ -1,15 +1,11 @@
 package services
-import java.io.File
-
+import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
 import model.{Color, TrafficLight}
-import play.api.libs._
-import play.api.mvc._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.language.postfixOps
-import com.typesafe.config.{Config}
 @Singleton
 class InMemoryTrafficLightService @Inject() (config: Config) extends TrafficLightService {
 
@@ -57,7 +53,7 @@ class InMemoryTrafficLightService @Inject() (config: Config) extends TrafficLigh
       db += id -> orangeTrafficLight
 
       // Step 2. Wait 15 seconds
-      Thread.sleep(config.getInt("traffic-light.duration"))
+      Thread.sleep(5000)
 
       // Step 3. Make the light Red
       val redTrafficLight = TrafficLight(id, Color.Red)

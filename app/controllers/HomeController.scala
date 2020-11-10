@@ -6,8 +6,8 @@ import json.TrafficLightJson._
 import model.Color.Color
 import model.{Color, TrafficLight}
 import play.api.libs.json._
-import play.api.libs.ws._
 import play.api.mvc._
+import play.libs.ws.WSClient
 import services.TrafficLightService
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -18,6 +18,7 @@ import scala.language.postfixOps
   * This controller creates an `Action` to handle HTTP requests to the
   * application's home page.
   */
+
 class HomeController @Inject() (
   trafficLightService: TrafficLightService,
   trafficLightDAO: TrafficLightDAO,
@@ -31,6 +32,9 @@ class HomeController @Inject() (
     * will be called when the application receives a `GET` request with
     * a path of `/`.
     */
+//  val trafficLightService: TrafficLightService
+//  val trafficLightDAO: TrafficLightDAO
+//  val ws: WSClient
   def index(): Action[AnyContent] = Action {
     Ok(views.html.index())
   }
@@ -57,7 +61,7 @@ class HomeController @Inject() (
     trafficLightDAO.get(someId).map{tl => Ok(Json.toJson(tl))}
   }
 
-  def update = Action.async(parse.json) { request =>
+  def update = Action.async(parse.json)  { request =>
     val result = request.body.validate[TrafficLight]
     result.fold(
       errors => {
@@ -105,7 +109,7 @@ class HomeController @Inject() (
     )
   }
 
-  def update_DB = Action.async(parse.json) { request =>
+  def update_DB = Action.async(parse.json) { implicit request =>
     val result = request.body.validate[TrafficLight]
     result.fold(
       errors => {
@@ -117,6 +121,7 @@ class HomeController @Inject() (
         def updateLights(newTrafficLightColor: Color , transition: Int => Future[TrafficLight]): Future[Result] = {
           if (newTrafficLight.color == newTrafficLightColor) {
             val updatedTrafficLight = transition(newTrafficLight.id) // will return a future of TL
+            trafficLightDAO.save(newTrafficLight)
             updatedTrafficLight.map(Json.toJson[TrafficLight]).map(Ok(_))
 
           } else {
@@ -151,7 +156,7 @@ class HomeController @Inject() (
     )
   }
   // Playing with WS
-  def availability = Action.async {
+/*  def availability = Action.async {
     val response: Future[WSResponse] = ws.url("http://localhost:9000/traffic-light1").get()
     val siteAvailable: Future[Boolean] = response.map { r =>
       r.status == 200
@@ -160,6 +165,6 @@ class HomeController @Inject() (
       if (isAvailable) Ok("The Play site is up")
       else Ok("The Play site is down")
     }
-  }
+  }*/
 
 }

@@ -1,11 +1,10 @@
-# Lights schema
--- !Ups
+# -- !Ups
 
-CREATE TABLE  db (
+CREATE TABLE  "TrafficLights" (
                          id          bigint(20) NOT NULL UNIQUE,
-                         lights      varchar(255) NOT NULL
+                         color      varchar(255) NOT NULL
 );
 
--- !Downs
+# -- !Downs
 
-DROP TABLE db
+DROP TABLE "TrafficLights"
