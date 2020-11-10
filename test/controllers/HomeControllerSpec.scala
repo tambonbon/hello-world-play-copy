@@ -3,10 +3,10 @@ package controllers
 import dao.TrafficLightDAO
 import org.mockito.MockitoSugar
 import org.scalatestplus.play.guice._
+import play.api.libs.ws.WSClient
 import play.api.mvc.ControllerComponents
 import play.api.test.Helpers._
 import play.api.test._
-import play.libs.ws.WSClient
 import services.TrafficLightService
 //import org.scalatest.mockito.MockitoSugar
 import org.scalatestplus.play._
@@ -27,7 +27,7 @@ class HomeControllerSpec extends PlaySpec with GuiceOneAppPerTest with Injecting
       val mockCC = mock[ControllerComponents]
       val trafficLightDAO = inject[TrafficLightDAO]
       // i try to use mock or inject here, but no success
-      val controller = new HomeController((  stubControllerComponents()))
+      val controller = new HomeController(mockTLService, mockTLDAO, mockWS,stubControllerComponents())
       val home = controller.index().apply(FakeRequest(GET, "/"))
 
       status(home) mustBe OK

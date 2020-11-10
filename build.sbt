@@ -16,8 +16,10 @@ libraryDependencies ++= Seq(
   ws,
   "com.typesafe" % "config" % "1.4.0",
   "org.webjars" % "jquery" % "2.1.3",
+  "com.beachape" %% "enumeratum" % "1.6.1",
+  "com.beachape" %% "enumeratum-slick" % "1.6.0",
+  "org.typelevel" %% "cats-core" % "2.1.1",
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % "test",
-"org.scalatest" %% "scalatest" % "3.2.2",
   "org.mockito" %% "mockito-scala" % "1.16.0"
 )
 scalacOptions ++= Seq(

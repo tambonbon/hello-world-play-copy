@@ -10,7 +10,7 @@ GET    /traffic-light                     controllers.HomeController.all
 GET    /traffic-light/:someId             controllers.HomeController.get(someId: Int)
 PUT    /traffic-light                     controllers.HomeController.update
 #PUT    /traffic-light-async               controllers.HomeController.updateAsync
-#GET    /avail                             controllers.HomeController.availability
+GET    /availability                             controllers.HomeController.availability
 
 GET    /traffic-light-DB                controllers.HomeController.all_DB
 GET    /traffic-light-DB/:someID        controllers.HomeController.get_DB(someID: Int)
