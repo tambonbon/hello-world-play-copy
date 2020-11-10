@@ -1,0 +1,15 @@
+2020-11-10 21:32:01 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "play_evolutions" not found; SQL statement:
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-199]
+2020-11-10 21:32:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TrafficLights" already exists; SQL statement:
+create table "TrafficLights" ("id" INTEGER NOT NULL PRIMARY KEY,"color" VARCHAR NOT NULL) [42101-199]
+2020-11-10 21:32:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TrafficLights" already exists; SQL statement:
+create table "TrafficLights" ("id" INTEGER NOT NULL PRIMARY KEY,"color" VARCHAR NOT NULL) [42101-199]
+2020-11-10 21:32:21 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TrafficLights" already exists; SQL statement:
+create table "TrafficLights" ("id" INTEGER NOT NULL PRIMARY KEY,"color" VARCHAR NOT NULL) [42101-199]
+2020-11-10 21:32:21 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TrafficLights" already exists; SQL statement:
+create table "TrafficLights" ("id" INTEGER NOT NULL PRIMARY KEY,"color" VARCHAR NOT NULL) [42101-199]
