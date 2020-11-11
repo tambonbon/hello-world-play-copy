@@ -1,12 +1,12 @@
 package controllers
 
-import dao.TrafficLightDAO
+import dao.{TrafficLightDAO, TrafficLightDAOComponent}
 import org.mockito.MockitoSugar
 import org.scalatestplus.play.guice._
 import play.api.mvc.ControllerComponents
 import play.api.test.Helpers._
 import play.api.test._
-import play.libs.ws.WSClient
+import play.api.libs.ws.WSClient
 import services.TrafficLightService
 //import org.scalatest.mockito.MockitoSugar
 import org.scalatestplus.play._
@@ -22,7 +22,7 @@ class HomeControllerSpec extends PlaySpec with GuiceOneAppPerTest with Injecting
 
     "render the index page from a new instance of controller" in {
       val mockTLService = mock[TrafficLightService]
-      val mockTLDAO = mock[TrafficLightDAO]
+      val mockTLDAO = mock[TrafficLightDAOComponent]
       val mockWS = mock[WSClient]
       val mockCC = mock[ControllerComponents]
       val trafficLightDAO = inject[TrafficLightDAO]

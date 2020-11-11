@@ -1,13 +1,13 @@
 package controllers
 
-import dao.TrafficLightDAO
+import dao.TrafficLightDAOComponent
 import javax.inject._
 import json.TrafficLightJson._
 import model.Color.Color
 import model.{Color, TrafficLight}
 import play.api.libs.json._
+import play.api.libs.ws.{WSClient, WSResponse}
 import play.api.mvc._
-import play.libs.ws.WSClient
 import services.TrafficLightService
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -20,10 +20,10 @@ import scala.language.postfixOps
   */
 
 class HomeController @Inject() (
-  trafficLightService: TrafficLightService,
-  trafficLightDAO: TrafficLightDAO,
-  ws: WSClient,
-  controllerComponents: ControllerComponents) extends AbstractController(controllerComponents) {
+                                 trafficLightService: TrafficLightService,
+                                 trafficLightDAO: TrafficLightDAOComponent,
+                                 ws: WSClient,
+                                 controllerComponents: ControllerComponents) extends AbstractController(controllerComponents) {
 //  import dbConfig.profile.api._
   /**
     * Create an Action to render an HTML page.
@@ -156,8 +156,8 @@ class HomeController @Inject() (
     )
   }
   // Playing with WS
-/*  def availability = Action.async {
-    val response: Future[WSResponse] = ws.url("http://localhost:9000/traffic-light1").get()
+  def availability = Action.async {
+    val response: Future[WSResponse] = ws.url("http://localhost:9000/traffic-light").get()
     val siteAvailable: Future[Boolean] = response.map { r =>
       r.status == 200
     }
@@ -165,6 +165,6 @@ class HomeController @Inject() (
       if (isAvailable) Ok("The Play site is up")
       else Ok("The Play site is down")
     }
-  }*/
+  }
 
 }

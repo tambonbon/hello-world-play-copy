@@ -1,38 +1,19 @@
 package dao
 import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
-import model.Color.Color
 import model.{Color, TrafficLight}
-import play.api.db.slick.DatabaseConfigProvider
+import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import slick.jdbc.JdbcProfile
 
 import scala.concurrent.{ExecutionContext, Future}
-import scala.util.Try
 
 @Singleton()
 class TrafficLightDAO @Inject() (config: Config,
-                                 dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
-  // extends HasDatabaseConfigProvider[JdbcProfile]{
-  val dbConfig = dbConfigProvider.get[JdbcProfile]
+                                 protected val dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext)
+  extends HasDatabaseConfigProvider[JdbcProfile] with TrafficLightDAOComponent {
+//  val dbConfig = dbConfigProvider.get[JdbcProfile]
 
-  import dbConfig._
   import profile.api._
-
-  implicit lazy val myColorMapper = MappedColumnType.base[Color, String](
-    e => e.toString,
-    s =>
-      Try(Color.withName(s)).getOrElse(
-        throw new IllegalArgumentException(s"enumeration $s doesn't exist $Color[${Color.values.mkString(",")}]")
-      )
-  )
-
-  class TrafficLightsTable(tag: Tag) extends Table[TrafficLight](tag, "TrafficLights") {
-    def id = column[Int]("id", O.PrimaryKey)
-
-    def lights = column[Color]("color")
-
-    def * = (id, lights) <> ((TrafficLight.apply _).tupled, TrafficLight.unapply)
-  }
 
   val trafficLights = TableQuery[TrafficLightsTable] // This is the actual query
 
